@@ -1,6 +1,6 @@
 """Skeletons for built-in symbols."""
 
-import sys as __sys
+import sys
 
 
 def abs(number):
@@ -259,7 +259,7 @@ def pow(x, y, z=None):
     pass
 
 
-if __sys.version_info < (3,):
+if sys.version_info < (3,):
     def range(start, stop=None, step=None):
         """Return a list containing an arithmetic progression of integers.
 
@@ -362,7 +362,7 @@ class enumerate(object):
         pass
 
 
-if __sys.version_info < (3,):
+if sys.version_info < (3,):
     class xrange(object):
         """xrange object."""
 

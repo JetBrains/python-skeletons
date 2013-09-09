@@ -93,7 +93,7 @@ if sys.version >= (2, 5):
         def unpack(self, string):
             """Identical to the unpack() function, using the compiled format.
 
-            :type string: string
+            :type string: bytestring
             :rtype: tuple
             """
             pass

@@ -2639,3 +2639,115 @@ class dict(object):
         :rtype: list[V]
         """
         pass
+
+
+if sys.version_info < (3,):
+    class file(object):
+        """File object."""
+
+        def __init__(self, name, mode='r', buffering=-1):
+            """Create a file object.
+
+            :type name: string
+            :type mode: string
+            :type buffering: numbers.Integral
+            """
+            self.name = name
+            self.mode = mode
+
+        def fileno(self):
+            """Return the integer "file descriptor" that is used by the
+            underlying implementation to request I/O operations from the
+            operating system.
+
+            :rtype: int
+            """
+            pass
+
+        def isatty(self):
+            """Return True if the file is connected to a tty(-like) device,
+            else False.
+
+            :rtype: bool
+            """
+            pass
+
+        def next(self):
+            """Returns the next input line.
+
+            :rtype: bytes | unicode
+            """
+            pass
+
+        def read(self, size=-1):
+            """Read at most size bytes from the file (less if the read hits EOF
+            before obtaining size bytes).
+
+            :type size: numbers.Integral
+            :rtype: bytes | unicode
+            """
+            pass
+
+        def readline(self, size=-1):
+            """Read one entire line from the file.
+
+            :type size: numbers.Integral
+            :rtype: bytes | unicode
+            """
+            pass
+
+        def readlines(self, sizehint=-1):
+            """Read until EOF using readline() and return a list containing the
+            lines thus read.
+
+            :type sizehint: numbers.Integral
+            :rtype: list[bytes | unicode]
+            """
+            pass
+
+        def xreadlines(self):
+            """This method returns the same thing as iter(f).
+
+            :rtype: collections.Iterable[bytes | unicode]
+            """
+            pass
+
+        def seek(self, offset, whence=0):
+            """Set the file’s current position, like stdio‘s fseek().
+
+            :type offset: numbers.Integral
+            :type whence: numbers.Integral
+            :rtype: None
+            """
+            pass
+
+        def tell(self):
+            """Return the file’s current position, like stdio‘s ftell().
+
+            :rtype: int
+            """
+            pass
+
+        def truncate(self, size=-1):
+            """Truncate the file’s size.
+
+            :type size: numbers.Integral
+            :rtype: None
+            """
+            pass
+
+        def write(self, str):
+            """"Write a string to the file.
+
+            :type str: bytes | unicode
+            :rtype: None
+            """
+            pass
+
+        def writelines(self, sequence):
+            """Write a sequence of strings to the file.
+
+            :type sequence: collections.Iterable[bytes | unicode]
+            :rtype: None
+            """
+            pass

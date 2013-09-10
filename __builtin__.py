@@ -2300,3 +2300,342 @@ if sys.version_info < (3,):
             :rtype: unicode
             """
             pass
+
+
+class list(object):
+    """List object."""
+
+    def __init__(self, iterable=None):
+        """Create a list object.
+
+        :type iterable: collections.Iterable[T]
+        :rtype: list[T]
+        """
+
+    def __add__(self, y):
+        """The concatenation of x and y.
+
+        :type y: list[T]
+        :rtype: list[T]
+        """
+        pass
+
+    def __mul__(self, n):
+        """n shallow copies of x concatenated.
+
+        :type n: numbers.Integral
+        :rtype: list[T]
+        """
+        pass
+
+    def __rmul__(self, n):
+        """n shallow copies of x concatenated.
+
+        :type n: numbers.Integral
+        :rtype: list[T]
+        """
+        pass
+
+    def __getitem__(self, y):
+        """y-th item of x, origin 0.
+
+        :type y: numbers.Integral
+        :rtype: T
+        """
+        pass
+
+    def __setitem__(self, i, y):
+        """Item i is replaced by y.
+
+        :type i: numbers.Integral
+        :type y: T
+        :rtype: None
+        """
+        pass
+
+    def __delitem__(self, i):
+        """Remove i-th item.
+
+        :type i: numbers.Integral
+        :rtype: None
+        """
+
+    def append(self, x):
+        """Appends x to the end of the sequence.
+
+        :type x: T
+        :rtype: None
+        """
+        pass
+
+    def extend(self, t):
+        """Extends the sequence with the contents of t.
+
+        :type t: collections.Iterable[T]
+        :rtype: None
+        """
+        pass
+
+    def count(self, x):
+        """Total number of occurrences of x in the sequence.
+
+        :type x: T
+        :rtype: int
+        """
+        pass
+
+    def index(self, x, i=None, j=None):
+        """Index of the first occurrence of x in the sequence.
+
+        :type x: T
+        :type i: numbers.Integral | None
+        :type j: numbers.Integral | none
+        :rtype: int
+        """
+        pass
+
+    def insert(self, i, x):
+        """Inserts x into the sequence at the index given by i.
+
+        :type i: numbers.Number
+        :type x: T
+        :rtype: None
+        """
+        pass
+
+    def pop(self, i=-1):
+        """Retrieves the item at i and also removes it from the sequence.
+
+        :type i: numbers.Number
+        :rtype: T
+        """
+        pass
+
+    def remove(self, x):
+        """Remove the first item x from the sequence.
+
+        :type x: T
+        :rtype: None
+        """
+        pass
+
+    def sort(self, cmp=None, key=None, reverse=False):
+        """Sort the items of the sequence in place.
+
+        :type cmp: ((T, T) -> int) | None
+        :type key: ((T) -> object) | None
+        :type reverse: bool
+        """
+        pass
+
+
+class tuple(object):
+    """Tuple object."""
+
+    def __add__(self, y):
+        """The concatenation of x and y.
+
+        :type y: tuple
+        :rtype: tuple
+        """
+        pass
+
+    def __mul__(self, n):
+        """n shallow copies of x concatenated.
+
+        :type n: numbers.Integral
+        :rtype: tuple
+        """
+        pass
+
+    def __rmul__(self, n):
+        """n shallow copies of x concatenated.
+
+        :type n: numbers.Integral
+        :rtype: tuple
+        """
+        pass
+
+    def __getitem__(self, y):
+        """y-th item of x, origin 0.
+
+        :type y: numbers.Integral
+        :rtype: object | unknown
+        """
+        pass
+
+    def count(self, x):
+        """Total number of occurrences of x in the sequence.
+
+        :type x: object
+        :rtype: int
+        """
+        pass
+
+    def index(self, x, i=None, j=None):
+        """Index of the first occurrence of x in the sequence.
+
+        :type x: object
+        :type i: numbers.Integral | None
+        :type j: numbers.Integral | none
+        :rtype: int
+        """
+        pass
+
+
+class dict(object):
+    """Dictionary object."""
+
+    def __init__(self, iterable=None, **kwargs):
+        """Create a dictionary object.
+
+        :type iterable: collections.Iterable[T, V]
+        :rtype: dict[T, V]
+        """
+        pass
+
+    def __len__(self):
+        """Return the number of items in the dictionary d.
+
+        :rtype: int
+        """
+        pass
+
+    def __getitem__(self, key):
+        """Return the item of d with key key.
+
+        :type key: T
+        :rtype: V
+        """
+        pass
+
+    def __setitem__(self, key, value):
+        """Set d[key] to value.
+
+        :type key: T
+        :type value: V
+        :rtype: None
+        """
+        pass
+
+    def __delitem__(self, key):
+        """Remove d[key] from d.
+
+        :type key: T
+        :rtype: None
+        """
+        pass
+
+    def copy(self):
+        """Return a shallow copy of the dictionary.
+
+        :rtype: dict[T, V]
+        """
+        pass
+
+    @classmethod
+    def fromkeys(cls, seq, value=None):
+        """Create a new dictionary with keys from seq and values set to value.
+
+        :type seq: collections.Iterable[T]
+        :type value: V
+        :rtype: dict[T, V]
+        """
+        pass
+
+    def get(self, key, default=None):
+        """Return the value for key if key is in the dictionary, else default.
+
+        :type key: T
+        :type default: V | None
+        :rtype: V
+        """
+        pass
+
+    if sys.version_info < (3,):
+        def has_key(self, key):
+            """Return True if d has a key key, else False.
+
+            :type key: T
+            :rtype: bool
+            """
+            pass
+
+    def items(self):
+        """Return a copy of the dictionary’s list of (key, value) pairs.
+
+        :rtype: list[T, V]
+        """
+        pass
+
+    if sys.version_info < (3,):
+        def iteritems(self):
+            """Return an iterator over the dictionary’s (key, value) pairs.
+
+            :rtype: collections.Iterable[T, V]
+            """
+            pass
+
+        def iterkeys(self):
+            """Return an iterator over the dictionary’s keys.
+
+            :rtype: collections.Iterable[T]
+            """
+            pass
+
+        def itervalues(self):
+            """Return an iterator over the dictionary’s values.
+
+            :rtype: collections.Iterable[V]
+            """
+            pass
+
+    def keys(self):
+        """Return a copy of the dictionary’s list of keys.
+
+        :rtype: collections.Iterable[T]
+        """
+        pass
+
+    def pop(self, key, default=None):
+        """If key is in the dictionary, remove it and return its value, else
+        return default.
+
+        :type key: T
+        :type default: V | None
+        :rtype: V
+        """
+        pass
+
+    def popitem(self):
+        """Remove and return an arbitrary (key, value) pair from the
+        dictionary.
+
+        :rtype: (T, V)
+        """
+        pass
+
+    def setdefault(self, key, default=None):
+        """If key is in the dictionary, return its value.
+
+        :type key: T
+        :type default: V | None
+        :rtype: V
+        """
+        pass
+
+    def update(self, other=None, **kwargs):
+        """Update the dictionary with the key/value pairs from other,
+        overwriting existing keys.
+
+        :type other: dict[T, V] | collections.Iterable[T, V]
+        :rtype: None
+        """
+        pass
+
+    def values():
+        """Return a copy of the dictionary’s list of values.
+
+        :rtype: list[V]
+        """
+        pass

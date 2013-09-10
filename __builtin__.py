@@ -2751,3 +2751,61 @@ if sys.version_info < (3,):
             :rtype: None
             """
             pass
+
+
+class __generator(object):
+    """A mock class representing the generator function type."""
+    def __init__(self, value):
+        """Create a generator object.
+
+        :type value: T
+        :rtype: __generator[T]
+        """
+        self.gi_code = None
+        self.gi_frame = None
+        self.gi_running = 0
+
+    def __iter__(self):
+        """Defined to support iteration over container."""
+        pass
+
+    if sys.version_info < (3,):
+        def next(self):
+            """Return the next item from the container.
+
+            :rtype: T
+            """
+            pass
+
+    if sys.version_info >= (3,):
+        def __next__(self):
+            """Return the next item from the container.
+
+            :rtype: T
+            """
+            pass
+
+
+    if sys.version_info >= (2, 5):
+        def close(self):
+            """Raises new GeneratorExit exception inside the generator to
+            terminate the iteration.
+
+            :rtype: None
+            """
+            pass
+
+        def send(self, value):
+            """Resumes the generator and "sends" a value that becomes the
+            result of the current yield-expression.
+
+            :rtype: T
+            """
+            pass
+
+        def throw(self, type, value=None, traceback=None):
+            """Used to raise an exception inside the generator.
+
+            :rtype: None
+            """
+            pass

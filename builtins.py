@@ -289,8 +289,8 @@ def repr(object):
 def round(number, ndigits=None):
     """Round a number to a given precision in decimal digits (default 0 digits).
 
-    :type number: numbers.Real
-    :type ndigits: numbers.Real | None
+    :type number: object
+    :type ndigits: numbers.Integral | None
     :rtype: float
     """
     pass

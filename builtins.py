@@ -330,6 +330,22 @@ class object:
         pass
 
 
+class type(object):
+    """Type of object."""
+
+    def __instancecheck__(cls, instance):
+        """Return true if instance should be considered a (direct or indirect)
+        instance of class.
+        """
+        return False
+
+    def __subclasscheck__(cls, subclass):
+        """Return true if subclass should be considered a (direct or indirect)
+        subclass of class.
+        """
+        return False
+
+
 class enumerate(object):
     """enumerate object."""
 

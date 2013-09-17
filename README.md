@@ -109,6 +109,7 @@ PyCharm 3 can extract the following information from the skeletons:
 * Return types and parameter types of functions and methods
 * Types of assignment targets
 * Extra module members
+* Extra class members
 * TODO
 
 PyCharm 3 comes with a snapshot of the Python skeletons repository. You

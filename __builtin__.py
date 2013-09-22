@@ -168,12 +168,13 @@ def issubclass(C, B):
     pass
 
 
-def iter(source, sentinel=None):
+def iter(o, sentinel=None):
     """Get an iterator from an object. In the first form, the argument must
     supply its own iterator, or be a sequence. In the second form, the callable
     is called until it returns the sentinel.
 
-    :type source: collections.Iterable[T]
+    :type o: collections.Iterable[T] | (() -> object)
+    :type sentinel: object | None
     :rtype: collections.Iterator[T]
     """
     pass

@@ -74,6 +74,30 @@ class timedelta(object):
         """
         return _datetime.timedelta()
 
+    def __floordiv__(self, other):
+        """Divide by an integer or a timedelta.
+
+        :type other: numbers.Integral | _datetime.timedelta
+        :rtype: _datetime.timedelta | int
+        """
+        pass
+
+    def __div__(self, other):
+        """Divide by an integer.
+
+        :type other: numbers.Integral
+        :rtype: _datetime.timedelta
+        """
+        pass
+
+    def __truediv__(self, other):
+        """Divide by a float or a timedelta.
+
+        :type other: numbers.Real | _datetime.timedelta
+        :rtype: _datetime.timedelta | float
+        """
+        pass
+
     if sys.version_info >= (2, 7):
         def total_seconds(self):
             """Return the total number of seconds contained in the duration.

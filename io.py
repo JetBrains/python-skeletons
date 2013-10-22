@@ -17,7 +17,7 @@ def open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None,
     :type newline: string | None
     :type closefd: bool
     :type opener: ((string, int) -> int) | None
-    :rtype: FileIO[bytes] | TextIOWrapper[unicode]
+    :rtype: io.FileIO[bytes] | io.TextIOWrapper[unicode]
     """
     pass
 
@@ -32,7 +32,7 @@ class IOBase(object):
     def __init__(self, *args, **kwargs):
         """Private constructor of IOBase.
 
-        :rtype: IOBase[T <= bytes | unicode]
+        :rtype: io.IOBase[T <= bytes | unicode]
         """
         self.closed = False
 
@@ -150,7 +150,7 @@ class RawIOBase(io.IOBase):
     def __init__(self, *args, **kwargs):
         """Private constructor of RawIOBase.
 
-        :rtype: RawIOBase[bytes]
+        :rtype: io.RawIOBase[bytes]
         """
         pass
 
@@ -195,7 +195,7 @@ class BufferedIOBase(io.IOBase):
     def __init__(self, *args, **kwargs):
         """Private constructor of BufferedIOBase.
 
-        :rtype: BufferedIOBase[bytes]
+        :rtype: io.BufferedIOBase[bytes]
         """
         pass
 
@@ -210,7 +210,7 @@ class BufferedIOBase(io.IOBase):
 
     def read1(self, n=-1):
         """Read and return up to n bytes, with at most one call to the
-        underlying raw stream’s read() method.
+        underlying raw stream's read() method.
 
         :type n: numbers.Integral
         :rtype: bytes
@@ -233,7 +233,7 @@ class FileIO(io.RawIOBase):
         :type name: string
         :type mode: string
         :type closefd: bool
-        :rtype: FileIO[bytes]
+        :rtype: io.FileIO[bytes]
         """
         self.name = name
         self.mode = mode
@@ -433,7 +433,7 @@ class TextIOBase(io.IOBase):
 class TextIOWrapper(io.TextIOBase):
     """A buffered text stream over a BufferedIOBase binary stream.
 
-    :type buffer: BufferedIOBase
+    :type buffer: io.BufferedIOBase
     :type encoding: string
     :type errors: string
     :type newlines: string
@@ -445,12 +445,12 @@ class TextIOWrapper(io.TextIOBase):
                  line_buffering=False):
         """Creat a TextIOWrapper object.
 
-        :type buffer: BufferedIOBase
+        :type buffer: io.BufferedIOBase
         :type encoding: string | None
         :type errors: string | None
         :type newline: string | None
         :type line_buffering: bool
-        :rtype: TextIOWrapper[unicode]
+        :rtype: io.TextIOWrapper[unicode]
         """
         self.name = unicode()
         self.buffer = buffer

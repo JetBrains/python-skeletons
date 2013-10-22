@@ -57,6 +57,8 @@ Conventions
 
 Skeletons should respect PEP-8 and PEP-257 style guides.
 
+TODO: Document how to reference the original module from a skeleton file.
+
 The most simple way of specifying types in skeletons is Sphinx docstrings.
 Function annotations could be used for specifying types, but they are
 available only for Python 3.

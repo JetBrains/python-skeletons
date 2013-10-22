@@ -100,10 +100,11 @@ The recommended way of checking the version of Python is:
             pass
 
 
-PyCharm
--------
+PyCharm / IntelliJ
+------------------
 
-PyCharm 3 can extract the following information from the skeletons:
+PyCharm 3 and the Python plugin 3.x for IntelliJ can extract the following
+information from the skeletons:
 
 * Parameters of functions and methods
 * Return types and parameter types of functions and methods
@@ -112,21 +113,27 @@ PyCharm 3 can extract the following information from the skeletons:
 * Extra class members
 * TODO
 
-PyCharm 3 comes with a snapshot of the Python skeletons repository. You
-should not modify it, because it will be updated with the PyCharm
-installation. If you want to change the skeletons, clone the skeletons GitHub
-repository into your PyCharm config directory:
+PyCharm 3 comes with a snapshot of the Python skeletons repository (Python
+plugin 3.0.1 for IntelliJ still doesn't include this repository). You
+**should not** modify it, because it will be updated with the PyCharm / Python
+plugin for IntelliJ installation. If you want to change the skeletons, clone
+the skeletons GitHub repository into your PyCharm/IntelliJ config directory:
 
-    cd <PyCharm config>
+    cd <config directory>
     git clone https://github.com/JetBrains/python-skeletons.git
 
-where `<PyCharm config>` is:
+where `<config directory>` is:
 
-* Mac OS X: `~/Library/Preferences/PyCharmXX/config`
-* Linux: `~/.PyCharmXX/config`
-* Windows: `<User home>\.PyCharmXX\config`
+* PyCharm
+    * Mac OS X: `~/Library/Preferences/PyCharmXX`
+    * Linux: `~/.PyCharmXX/config`
+    * Windows: `<User home>\.PyCharmXX\config`
+* IntelliJ
+    * Mac OS X: `~/Library/Preferences/IntelliJIdeaXX`
+    * Linux: `~/.IntelliJIdeaXX/config`
+    * Windows: `<User home>\.IntelliJIdeaXX\config`
 
-Please send your PyCharm-related bug reports and feature requests to
+Please send your PyCharm/IntelliJ-related bug reports and feature requests to
 [PyCharm issue tracker](http://youtrack.jetbrains.com/issues/PY).
 
 

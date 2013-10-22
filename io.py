@@ -383,6 +383,33 @@ class FileIO(io.RawIOBase):
         return 0
 
 
+class BytesIO(io.BufferedIOBase):
+    """A stream implementation using an in-memory bytes buffer."""
+
+    def __init__(self, initial_bytes=None):
+        """Create a BytesIO object.
+
+        :rtype: io.BytesIO[bytes]
+        """
+        pass
+
+    if sys.version_info >= (3, 2):
+        def getbuffer(self):
+            """Return a readable and writable view over the contents of the
+            buffer without copying them.
+
+            :rtype: bytearray
+            """
+            pass
+
+    def getvalue(self):
+        """Return bytes containing the entire contents of the buffer.
+
+        :rtype: bytes
+        """
+        return bytes()
+
+
 class TextIOBase(io.IOBase):
     """Base class for text streams.
 

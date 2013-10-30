@@ -82,7 +82,8 @@ the following notation:
     Foo[T]             # Foo parameterized with T
     (Foo, Bar) -> Baz  # Function of Foo and Bar that returns Baz
 
-The formal syntax is defined in `pytypes` library (work in progress).
+The formal syntax is defined in [pytypes](https://github.com/JetBrains/pytypes)
+library (work in progress).
 
 There are several shortcuts available:
 
@@ -96,7 +97,7 @@ There are several shortcuts available:
 The syntax is a subject to change. It is almost compatible to Python (except
 function types), but its semantics differs from Python (no `|`, no implicitly
 visible names, no generic types). So you cannot use these expressions in
-Python 3 function annotations. See also `python-righarrow`, `typeannotations`.
+Python 3 function annotations. See also related work below.
 
 The recommended way of checking the version of Python is:
 
@@ -105,6 +106,30 @@ The recommended way of checking the version of Python is:
     if sys.version_info >= (2, 7) and sys.version_info < (3,):
         def from_27_until_30():
             pass
+
+
+Related Work
+------------
+
+The JavaScript community is also interested in formalizing API definitions and
+specifying types. They have come up with several JavaScript dialects that
+support optional types: TypeScript, Dart. There is a JavaScript initiative
+similar to the proposed Python skeletons called
+[DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped). The idea is
+to use TypeScript API stubs for various JavaScript libraries.
+
+There are many approaches to specifying types in Python, none of them is widely
+adopted at the moment:
+
+* A series of old (2005) posts by GvR:
+  [1](http://www.artima.com/weblogs/viewpost.jsp?thread=85551),
+  [2](http://www.artima.com/weblogs/viewpost.jsp?thread=86641),
+  [3](http://www.artima.com/weblogs/viewpost.jsp?thread=87182)
+* String-based [python-rightarrow](https://github.com/kennknowles/python-rightarrow)
+  library
+* Expression-based [typeannotations](https://github.com/ceronman/typeannotations)
+  library for Python 3
+* [mypy](http://www.mypy-lang.org/) Python dialect
 
 
 PyCharm / IntelliJ

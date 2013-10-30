@@ -1914,7 +1914,7 @@ class dict(object):
 
 
     def items(self):
-        """Return a copy of the dictionary’s list of (key, value) pairs.
+        """Return a copy of the dictionary's list of (key, value) pairs.
 
         :rtype: list[T, V]
         """
@@ -1922,7 +1922,7 @@ class dict(object):
 
 
     def keys(self):
-        """Return a copy of the dictionary’s list of keys.
+        """Return a copy of the dictionary's list of keys.
 
         :rtype: collections.Iterable[T]
         """
@@ -1965,7 +1965,7 @@ class dict(object):
         pass
 
     def values():
-        """Return a copy of the dictionary’s list of values.
+        """Return a copy of the dictionary's list of values.
 
         :rtype: list[V]
         """

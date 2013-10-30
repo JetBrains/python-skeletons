@@ -2220,35 +2220,35 @@ class dict(object):
         pass
 
     def items(self):
-        """Return a copy of the dictionary’s list of (key, value) pairs.
+        """Return a copy of the dictionary's list of (key, value) pairs.
 
         :rtype: list[T, V]
         """
         pass
 
     def iteritems(self):
-        """Return an iterator over the dictionary’s (key, value) pairs.
+        """Return an iterator over the dictionary's (key, value) pairs.
 
         :rtype: collections.Iterable[T, V]
         """
         pass
 
     def iterkeys(self):
-        """Return an iterator over the dictionary’s keys.
+        """Return an iterator over the dictionary's keys.
 
         :rtype: collections.Iterable[T]
         """
         pass
 
     def itervalues(self):
-        """Return an iterator over the dictionary’s values.
+        """Return an iterator over the dictionary's values.
 
         :rtype: collections.Iterable[V]
         """
         pass
 
     def keys(self):
-        """Return a copy of the dictionary’s list of keys.
+        """Return a copy of the dictionary's list of keys.
 
         :rtype: collections.Iterable[T]
         """
@@ -2291,7 +2291,7 @@ class dict(object):
         pass
 
     def values():
-        """Return a copy of the dictionary’s list of values.
+        """Return a copy of the dictionary's list of values.
 
         :rtype: list[V]
         """
@@ -2369,7 +2369,7 @@ class file(object):
         pass
 
     def seek(self, offset, whence=0):
-        """Set the file’s current position, like stdio‘s fseek().
+        """Set the file's current position, like stdio's fseek().
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
@@ -2378,14 +2378,14 @@ class file(object):
         pass
 
     def tell(self):
-        """Return the file’s current position, like stdio‘s ftell().
+        """Return the file's current position, like stdio's ftell().
 
         :rtype: int
         """
         pass
 
     def truncate(self, size=-1):
-        """Truncate the file’s size.
+        """Truncate the file's size.
 
         :type size: numbers.Integral
         :rtype: None

@@ -349,8 +349,8 @@ class datetime(object):
     @classmethod
     def combine(cls, date, time):
         """Return a new datetime object whose date components are equal to the
-        given date object’s, and whose time components and tzinfo attributes
-        are equal to the given time object’s.
+        given date object's, and whose time components and tzinfo attributes
+        are equal to the given time object's.
 
         :type date: _datetime.date
         :type time: _datetime.time

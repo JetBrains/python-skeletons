@@ -59,6 +59,11 @@ Skeletons should respect PEP-8 and PEP-257 style guides.
 
 TODO: Document how to reference the original module from a skeleton file.
 
+TODO: Document what to put into the body of a skeleton function.
+
+TODO: Document the versioning policy: the most recent released API of a
+library + deprecation warnings for obsolete functions/classes.
+
 The most simple way of specifying types in skeletons is Sphinx docstrings.
 Function annotations could be used for specifying types, but they are
 available only for Python 3.

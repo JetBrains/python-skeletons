@@ -291,7 +291,7 @@ class FileIO(io.RawIOBase):
         :type limit: numbers.Integral
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def readlines(self, hint=-1):
         """Read and return a list of lines from the stream.
@@ -400,7 +400,7 @@ class BytesIO(io.BufferedIOBase):
 
             :rtype: bytearray
             """
-            pass
+            return bytearray()
 
     def getvalue(self):
         """Return bytes containing the entire contents of the buffer.

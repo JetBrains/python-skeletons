@@ -88,7 +88,7 @@ class OutputType(object):
         :type sizehint: numbers.Integral
         :rtype: list[T]
         """
-        pass
+        return []
 
     def seek(self, offset, whence=0):
         """Set the buffer's current position, like stdio's fseek().
@@ -104,7 +104,7 @@ class OutputType(object):
 
         :rtype: int
         """
-        pass
+        return 0
 
     def truncate(self, size=-1):
         """Truncate the buffer's size.

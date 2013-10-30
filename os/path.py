@@ -39,7 +39,7 @@ def dirname(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def exists(path):
@@ -69,7 +69,7 @@ def expanduser(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def expandvars(path):
@@ -78,7 +78,7 @@ def expandvars(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def getatime(path):
@@ -170,7 +170,7 @@ def join(path, *paths):
     :type paths: collections.Iterable[T]
     :rtype: T
     """
-    pass
+    return path
 
 
 def normcase(path):
@@ -179,7 +179,7 @@ def normcase(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def normpath(path):
@@ -189,7 +189,7 @@ def normpath(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def realpath(path):
@@ -199,7 +199,7 @@ def realpath(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def relpath(path, start=os.curdir):
@@ -210,7 +210,7 @@ def relpath(path, start=os.curdir):
     :type start: T
     :rtype: T
     """
-    pass
+    return path
 
 
 def samefile(path1, path2):
@@ -250,7 +250,7 @@ def split(path):
     :type path: T <= bytes | unicode
     :rtype: (T, T)
     """
-    pass
+    return path, path
 
 
 def splitdrive(path):
@@ -259,7 +259,7 @@ def splitdrive(path):
     :type path: T <= bytes | unicode
     :rtype: (T, T)
     """
-    pass
+    return path, path
 
 
 def splitext(path):
@@ -268,7 +268,7 @@ def splitext(path):
     :type path: T <= bytes | unicode
     :rtype: (T, T)
     """
-    pass
+    return path, path
 
 
 def splitunc(path):
@@ -277,7 +277,7 @@ def splitunc(path):
     :type path: T <= bytes | unicode
     :rtype: (T, T)
     """
-    pass
+    return path, path
 
 
 if sys.version_info < (3, 0):
@@ -288,5 +288,6 @@ if sys.version_info < (3, 0):
         :type path: T <= bytes | unicode
         :type visit: (V, T, list[T]) -> None
         :type arg: V
+        :rtype: None
         """
         pass

@@ -13,7 +13,7 @@ def ctermid():
 
     :rtype: string
     """
-    pass
+    return ''
 
 
 def getegid():
@@ -68,7 +68,7 @@ def getlogin():
 
     :rtype: string
     """
-    pass
+    return ''
 
 
 def getpgid(pid):
@@ -264,7 +264,7 @@ def strerror(code):
     :type code: int
     :rtype: string
     """
-    pass
+    return ''
 
 
 def umask(mask):
@@ -282,7 +282,7 @@ def uname():
 
     :rtype: (string, string, string, string, string)
     """
-    pass
+    return '', '', '', '', ''
 
 
 def unsetenv(varname):
@@ -302,7 +302,7 @@ def fdopen(fd, mode='r', bufsize=-1):
     :type bufsize: int
     :rtype: file
     """
-    pass
+    return file()
 
 
 def popen(command, mode='r', bufsize=-1):
@@ -511,7 +511,7 @@ def open(file, flags, mode=0777):
     :type mode: int
     :rtype: file
     """
-    pass
+    return file()
 
 
 def openpty():
@@ -566,7 +566,7 @@ def ttyname(fd):
     :type fd: int
     :rtype: string
     """
-    pass
+    return ''
 
 
 def write(fd, str):
@@ -614,7 +614,7 @@ def getcwd():
 
     :rtype: string
     """
-    pass
+    return ''
 
 
 if sys.version_info < (3, 0):
@@ -623,7 +623,7 @@ if sys.version_info < (3, 0):
 
         :rtype: unicode
         """
-        pass
+        return unicode()
 
 
 def chflags(path, flags):
@@ -817,7 +817,7 @@ def readlink(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def remove(path):
@@ -912,7 +912,7 @@ def tempnam(dir=None, prefix=None):
     :type prefix: bytes | unicode
     :rtype: string
     """
-    pass
+    return ''
 
 
 def tmpnam():
@@ -921,7 +921,7 @@ def tmpnam():
 
     :rtype: string
     """
-    pass
+    return ''
 
 
 def unlink(path):
@@ -1250,4 +1250,4 @@ def urandom(n):
     :type n: int
     :rtype: bytes
     """
-    pass
+    return bytes()

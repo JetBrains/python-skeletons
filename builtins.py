@@ -7,7 +7,7 @@ def abs(number):
     :type number: T
     :rtype: T | unknown
     """
-    pass
+    return number
 
 
 def all(iterable):
@@ -16,7 +16,7 @@ def all(iterable):
     :type iterable: collections.Iterable
     :rtype: bool
     """
-    pass
+    return False
 
 
 def any(iterable):
@@ -25,7 +25,7 @@ def any(iterable):
     :type iterable: collections.Iterable
     :rtype: bool
     """
-    pass
+    return False
 
 
 def bin(number):
@@ -34,7 +34,7 @@ def bin(number):
     :type number: numbers.Number
     :rtype: bytes
     """
-    pass
+    return bytes()
 
 
 def callable(object):
@@ -43,7 +43,7 @@ def callable(object):
 
     :rtype: bool
     """
-    pass
+    return False
 
 
 def chr(i):
@@ -52,7 +52,7 @@ def chr(i):
     :type i: numbers.Integral
     :rtype: str
     """
-    pass
+    return ''
 
 
 def dir(object=None):
@@ -62,7 +62,7 @@ def dir(object=None):
 
     :rtype: list[str]
     """
-    pass
+    return []
 
 
 def divmod(x, y):
@@ -72,7 +72,7 @@ def divmod(x, y):
     :type y: numbers.Number
     :rtype: (int | long | float | unknown, int | long | float | unknown)
     """
-    pass
+    return 0, 0
 
 
 def filter(function_or_none, sequence):
@@ -84,7 +84,7 @@ def filter(function_or_none, sequence):
     :type sequence: T <= list | collections.Iterable | bytes | str
     :rtype: T
     """
-    pass
+    return sequence
 
 
 def getattr(object, name, default=None):
@@ -103,7 +103,7 @@ def globals():
 
     :rtype: dict[str, unknown]
     """
-    pass
+    return {}
 
 
 def hasattr(object, name):
@@ -112,7 +112,7 @@ def hasattr(object, name):
     :type name: str
     :rtype: bool
     """
-    pass
+    return False
 
 
 def hash(object):
@@ -120,7 +120,7 @@ def hash(object):
 
     :rtype: int
     """
-    pass
+    return 0
 
 
 def hex(number):
@@ -129,7 +129,7 @@ def hex(number):
     :type number: numbers.Integral
     :rtype: str
     """
-    pass
+    return ''
 
 
 def id(object):
@@ -137,7 +137,7 @@ def id(object):
 
     :rtype: int
     """
-    pass
+    return 0
 
 
 def isinstance(object, class_or_type_or_tuple):
@@ -146,7 +146,7 @@ def isinstance(object, class_or_type_or_tuple):
 
     :rtype: bool
     """
-    pass
+    return False
 
 
 def issubclass(C, B):
@@ -154,7 +154,7 @@ def issubclass(C, B):
 
     :rtype: bool
     """
-    pass
+    return False
 
 
 def iter(object, sentinel=None):
@@ -166,7 +166,7 @@ def iter(object, sentinel=None):
     :type sentinel: object | None
     :rtype: collections.Iterator[T]
     """
-    pass
+    return []
 
 
 def len(object):
@@ -175,7 +175,7 @@ def len(object):
     :type object: collections.Sized
     :rtype: int
     """
-    pass
+    return 0
 
 
 def locals():
@@ -184,7 +184,7 @@ def locals():
 
     :rtype: dict[str, unknown]
     """
-    pass
+    return {}
 
 
 def map(function, sequence, *sequence_1):
@@ -213,7 +213,7 @@ def oct(number):
     :type number: numbers.Integral
     :rtype: str
     """
-    pass
+    return ''
 
 
 def open(name, mode='r', buffering=-1, encoding=None, errors=None, newline=None,
@@ -227,7 +227,7 @@ def open(name, mode='r', buffering=-1, encoding=None, errors=None, newline=None,
     :type errors: str | None
     :rtype: file
     """
-    pass
+    return file()
 
 
 def ord(c):
@@ -236,7 +236,7 @@ def ord(c):
     :type c: str
     :rtype: int
     """
-    pass
+    return 0
 
 
 def pow(x, y, z=None):
@@ -248,7 +248,7 @@ def pow(x, y, z=None):
     :type z: numbers.Number | None
     :rtype: int | long | float | complex
     """
-    pass
+    return 0
 
 
 class range(object):
@@ -275,7 +275,7 @@ def reduce(function, sequence, initial=None):
     :type initial: T
     :rtype: T | unknown
     """
-    pass
+    return initial
 
 
 def repr(object):
@@ -284,7 +284,7 @@ def repr(object):
 
     :rtype: str
     """
-    pass
+    return ''
 
 
 def round(number, ndigits=None):
@@ -294,7 +294,7 @@ def round(number, ndigits=None):
     :type ndigits: numbers.Integral | None
     :rtype: float
     """
-    pass
+    return 0.0
 
 
 class slice(object):
@@ -315,7 +315,7 @@ def vars(object=None):
 
     :rtype: dict[str, unknown]
     """
-    pass
+    return {}
 
 
 class object:
@@ -371,7 +371,7 @@ class enumerate(object):
 
         :rtype: enumerate[int, T]
         """
-        pass
+        return self
 
 
 class int(object):
@@ -392,7 +392,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __sub__(self, y):
         """Difference of x and y.
@@ -400,7 +400,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __mul__(self, y):
         """Product of x and y.
@@ -408,7 +408,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __floordiv__(self, y):
         """Floored quotient of x and y.
@@ -416,7 +416,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __mod__(self, y):
         """Remainder of x / y.
@@ -424,7 +424,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __pow__(self, y, modulo=None):
         """x to the power y.
@@ -433,7 +433,7 @@ class int(object):
         :type modulo: numbers.Integral | None
         :rtype: int
         """
-        pass
+        return 0
 
     def __lshift__(self, n):
         """x shifted left by n bits.
@@ -441,7 +441,7 @@ class int(object):
          :type n: numbers.Integral
          :rtype: int
          """
-        pass
+        return 0
 
     def __rshift__(self, n):
         """x shifted right by n bits.
@@ -449,7 +449,7 @@ class int(object):
          :type n: numbers.Integral
          :rtype: int
          """
-        pass
+        return 0
 
     def __and__(self, y):
         """Bitwise and of x and y.
@@ -457,7 +457,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __or__(self, y):
         """Bitwise or of x and y.
@@ -465,7 +465,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __xor__(self, y):
         """Bitwise exclusive or of x and y.
@@ -473,7 +473,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __div__(self, y):
         """Quotient of x and y.
@@ -481,7 +481,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __truediv__(self, y):
         """Quotient of x and y.
@@ -489,7 +489,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __radd__(self, y):
         """Sum of y and x.
@@ -497,7 +497,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rsub__(self, y):
         """Difference of y and x.
@@ -505,7 +505,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rmul__(self, y):
         """Product of y and x.
@@ -513,7 +513,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rfloordiv__(self, y):
         """Floored quotient of y and x.
@@ -521,7 +521,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rmod__(self, y):
         """Remainder of y / x.
@@ -529,7 +529,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rpow__(self, y):
         """x to the power y.
@@ -537,7 +537,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rlshift__(self, y):
         """y shifted left by x bits.
@@ -545,7 +545,7 @@ class int(object):
          :type y: numbers.Integral
          :rtype: int
          """
-        pass
+        return 0
 
     def __rrshift__(self, y):
         """y shifted right by n bits.
@@ -553,7 +553,7 @@ class int(object):
          :type y: numbers.Integral
          :rtype: int
          """
-        pass
+        return 0
 
     def __rand__(self, y):
         """Bitwise and of y and x.
@@ -561,7 +561,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __ror__(self, y):
         """Bitwise or of y and x.
@@ -569,7 +569,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __rxor__(self, y):
         """Bitwise exclusive or of y and x.
@@ -577,7 +577,7 @@ class int(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __rdiv__(self, y):
         """Quotient of y and x.
@@ -585,7 +585,7 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __rtruediv__(self, y):
         """Quotient of y and x.
@@ -593,28 +593,28 @@ class int(object):
         :type y: numbers.Number
         :rtype: int
         """
-        pass
+        return 0
 
     def __pos__(self):
         """x unchanged.
 
         :rtype: int
         """
-        pass
+        return 0
 
     def __neg__(self):
         """x negated.
 
         :rtype: int
         """
-        pass
+        return 0
 
     def __invert__(self):
         """The bits of x inverted.
 
         :rtype: int
         """
-        pass
+        return 0
 
 
 class float(object):
@@ -633,7 +633,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __sub__(self, y):
         """Difference of x and y.
@@ -641,7 +641,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __mul__(self, y):
         """Product of x and y.
@@ -649,7 +649,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __floordiv__(self, y):
         """Floored quotient of x and y.
@@ -657,7 +657,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __mod__(self, y):
         """Remainder of x / y.
@@ -665,7 +665,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __pow__(self, y):
         """x to the power y.
@@ -673,7 +673,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __div__(self, y):
         """Quotient of x and y.
@@ -681,7 +681,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __truediv__(self, y):
         """Quotient of x and y.
@@ -689,7 +689,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __radd__(self, y):
         """Sum of y and x.
@@ -697,7 +697,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rsub__(self, y):
         """Difference of y and x.
@@ -705,7 +705,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rmul__(self, y):
         """Product of y and x.
@@ -713,7 +713,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rfloordiv__(self, y):
         """Floored quotient of y and x.
@@ -721,7 +721,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rmod__(self, y):
         """Remainder of y / x.
@@ -729,7 +729,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rpow__(self, y):
         """x to the power y.
@@ -737,7 +737,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rdiv__(self, y):
         """Quotient of y and x.
@@ -745,7 +745,7 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __rtruediv__(self, y):
         """Quotient of y and x.
@@ -753,21 +753,21 @@ class float(object):
         :type y: numbers.Number
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __pos__(self):
         """x unchanged.
 
         :rtype: float
         """
-        pass
+        return 0.0
 
     def __neg__(self):
         """x negated.
 
         :rtype: float
         """
-        pass
+        return 0.0
 
 
 class complex(object):
@@ -788,7 +788,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __sub__(self, y):
         """Difference of x and y.
@@ -796,7 +796,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __mul__(self, y):
         """Product of x and y.
@@ -804,7 +804,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __floordiv__(self, y):
         """Floored quotient of x and y.
@@ -812,7 +812,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __mod__(self, y):
         """Remainder of x / y.
@@ -820,7 +820,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __pow__(self, y):
         """x to the power y.
@@ -828,7 +828,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __div__(self, y):
         """Quotient of x and y.
@@ -836,7 +836,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __truediv__(self, y):
         """Quotient of x and y.
@@ -844,7 +844,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __radd__(self, y):
         """Sum of y and x.
@@ -852,7 +852,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rsub__(self, y):
         """Difference of y and x.
@@ -860,7 +860,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rmul__(self, y):
         """Product of y and x.
@@ -868,7 +868,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rfloordiv__(self, y):
         """Floored quotient of y and x.
@@ -876,7 +876,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rmod__(self, y):
         """Remainder of y / x.
@@ -884,7 +884,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rpow__(self, y):
         """x to the power y.
@@ -892,7 +892,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rdiv__(self, y):
         """Quotient of y and x.
@@ -900,7 +900,7 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __rtruediv__(self, y):
         """Quotient of y and x.
@@ -908,21 +908,21 @@ class complex(object):
         :type y: numbers.Number
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __pos__(self):
         """x unchanged.
 
         :rtype: complex
         """
-        pass
+        return 0j
 
     def __neg__(self):
         """x negated.
 
         :rtype: complex
         """
-        pass
+        return 0j
 
 
 class bytes(object):
@@ -941,7 +941,7 @@ class bytes(object):
         :type y: bytes
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -949,7 +949,7 @@ class bytes(object):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -957,7 +957,7 @@ class bytes(object):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -965,14 +965,14 @@ class bytes(object):
         :type y: numbers.Integral
         :rtype: int
         """
-        pass
+        return 0
 
     def __iter__(self):
         """Iterator over bytes.
 
         :rtype: collections.Iterator[int]
         """
-        pass
+        return []
 
     def capitalize(self):
         """Return a copy of the string with its first character capitalized
@@ -980,7 +980,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def center(self, width, fillchar=' '):
         """Return centered in a string of length width.
@@ -989,7 +989,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def count(self, sub, start=None, end=None):
         """Return the number of non-overlapping occurrences of substring
@@ -1000,7 +1000,7 @@ class bytes(object):
         :type end: numbers.Integral | None
         :rtype: int
         """
-        pass
+        return 0
 
     def decode(self, encoding='utf-8', errors='strict'):
         """Return a string decoded from the given bytes.
@@ -1009,7 +1009,7 @@ class bytes(object):
         :type errors: str
         :rtype: str
         """
-        pass
+        return ''
 
     def endswith(self, suffix, start=None, end=None):
         """Return True if the string ends with the specified suffix,
@@ -1020,7 +1020,7 @@ class bytes(object):
         :type end: numbers.Integral | None
         :rtype: bool
         """
-        pass
+        return False
 
     def find(self, sub, start=None, end=None):
         """Return the lowest index in the string where substring sub is
@@ -1031,7 +1031,7 @@ class bytes(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def index(self, sub, start=None, end=None):
         """Like find(), but raise ValueError when the substring is not
@@ -1042,7 +1042,7 @@ class bytes(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def isalnum(self):
         """Return true if all characters in the string are alphanumeric and
@@ -1050,7 +1050,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isalpha(self):
         """Return true if all characters in the string are alphabetic and there
@@ -1058,7 +1058,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isdigit(self):
         """Return true if all characters in the string are digits and there
@@ -1066,7 +1066,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def islower(self):
         """Return true if all cased characters in the string are lowercase
@@ -1074,7 +1074,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isspace(self):
         """Return true if there are only whitespace characters in the
@@ -1082,7 +1082,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def istitle(self):
         """Return true if the string is a titlecased string and there is at
@@ -1091,7 +1091,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isupper(self):
         """Return true if all cased characters in the string are uppercase
@@ -1099,7 +1099,7 @@ class bytes(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def join(self, iterable):
         """Return a string which is the concatenation of the strings in the
@@ -1108,7 +1108,7 @@ class bytes(object):
         :type iterable: collections.Iterable[bytes]
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def ljust(self, width, fillchar=' '):
         """Return the string left justified in a string of length width.
@@ -1118,7 +1118,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def lower(self):
         """Return a copy of the string with all the cased characters
@@ -1126,7 +1126,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def lstrip(self, chars=None):
         """Return a copy of the string with leading characters removed.
@@ -1134,7 +1134,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def partition(self, sep):
         """Split the string at the first occurrence of sep, and return a
@@ -1144,7 +1144,7 @@ class bytes(object):
         :type sep: bytes
         :rtype: (bytes, bytes, bytes)
         """
-        pass
+        return bytes(), bytes(), bytes()
 
     def replace(self, old, new, count=-1):
         """Return a copy of the string with all occurrences of substring
@@ -1155,7 +1155,7 @@ class bytes(object):
         :type count: numbers.Integral
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def rfind(self, sub, start=None, end=None):
         """Return the highest index in the string where substring sub is
@@ -1166,7 +1166,7 @@ class bytes(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def rindex(self, sub, start=None, end=None):
         """Like rfind(), but raise ValueError when the substring is not
@@ -1177,7 +1177,7 @@ class bytes(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def rjust(self, width, fillchar=' '):
         """Return the string right justified in a string of length width.
@@ -1187,7 +1187,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def rpartition(self, sep):
         """Split the string at the last occurrence of sep, and return a
@@ -1197,7 +1197,7 @@ class bytes(object):
         :type sep: bytes
         :rtype: (bytes, bytes, bytes)
         """
-        pass
+        return bytes(), bytes(), bytes()
 
     def rsplit(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1207,7 +1207,7 @@ class bytes(object):
         :type maxsplit: numbers.Integral
         :rtype: list[bytes]
         """
-        pass
+        return []
 
     def rstrip(self, chars=None):
         """Return a copy of the string with trailing characters removed.
@@ -1215,7 +1215,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def split(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1225,7 +1225,7 @@ class bytes(object):
         :type maxsplit: numbers.Integral
         :rtype: list[bytes]
         """
-        pass
+        return []
 
     def splitlines(self, keepends):
         """Return a list of the lines in the string, breaking at line
@@ -1234,7 +1234,7 @@ class bytes(object):
         :type keepends: bool
         :rtype: list[bytes]
         """
-        pass
+        return []
 
     def startswith(self, prefix, start=None, end=None):
         """Return True if string starts with the prefix, otherwise return
@@ -1245,7 +1245,7 @@ class bytes(object):
         :type end: numbers.Integral | None
         :rtype: bool
         """
-        pass
+        return False
 
     def strip(self, chars=None):
         """Return a copy of the string with the leading and trailing
@@ -1254,7 +1254,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def swapcase(self):
         """Return a copy of the string with uppercase characters converted
@@ -1262,7 +1262,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def title(self):
         """Return a titlecased version of the string where words start with
@@ -1270,7 +1270,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def upper(self):
         """Return a copy of the string with all the cased characters
@@ -1278,7 +1278,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def zfill(self, width):
         """Return the numeric string left filled with zeros in a string of
@@ -1287,7 +1287,7 @@ class bytes(object):
         :type width: numbers.Integral
         :rtype: bytes
         """
-        pass
+        return bytes()
 
 
 class str(object):
@@ -1306,7 +1306,7 @@ class str(object):
         :type y: str
         :rtype: str
         """
-        pass
+        return ''
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -1314,14 +1314,14 @@ class str(object):
         :type n: numbers.Integral
         :rtype: str
         """
-        pass
+        return ''
 
     def __mod__(self, y):
         """x % y.
 
         :rtype: str
         """
-        pass
+        return ''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1329,7 +1329,7 @@ class str(object):
         :type n: numbers.Integral
         :rtype: str
         """
-        pass
+        return ''
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -1337,14 +1337,14 @@ class str(object):
         :type y: numbers.Integral
         :rtype: str
         """
-        pass
+        return ''
 
     def __iter__(self):
         """Iterator over bytes.
 
         :rtype: collections.Iterator[str]
         """
-        pass
+        return []
 
     def capitalize(self):
         """Return a copy of the string with its first character capitalized
@@ -1352,7 +1352,7 @@ class str(object):
 
         :rtype: str
         """
-        pass
+        return ''
 
     def center(self, width, fillchar=' '):
         """Return centered in a string of length width.
@@ -1361,7 +1361,7 @@ class str(object):
         :type fillchar: str
         :rtype: str
         """
-        pass
+        return ''
 
     def count(self, sub, start=None, end=None):
         """Return the number of non-overlapping occurrences of substring
@@ -1372,7 +1372,7 @@ class str(object):
         :type end: numbers.Integral | None
         :rtype: int
         """
-        pass
+        return 0
 
     def encode(self, encoding='utf-8', errors='strict'):
         """Return an encoded version of the string as a bytes object.
@@ -1381,7 +1381,7 @@ class str(object):
         :type errors: str
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def endswith(self, suffix, start=None, end=None):
         """Return True if the string ends with the specified suffix,
@@ -1392,7 +1392,7 @@ class str(object):
         :type end: numbers.Integral | None
         :rtype: bool
         """
-        pass
+        return False
 
     def find(self, sub, start=None, end=None):
         """Return the lowest index in the string where substring sub is
@@ -1403,7 +1403,7 @@ class str(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def index(self, sub, start=None, end=None):
         """Like find(), but raise ValueError when the substring is not
@@ -1414,7 +1414,7 @@ class str(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def isalnum(self):
         """Return true if all characters in the string are alphanumeric and
@@ -1422,7 +1422,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isalpha(self):
         """Return true if all characters in the string are alphabetic and there
@@ -1430,7 +1430,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isdigit(self):
         """Return true if all characters in the string are digits and there
@@ -1438,7 +1438,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def islower(self):
         """Return true if all cased characters in the string are lowercase
@@ -1446,7 +1446,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isspace(self):
         """Return true if there are only whitespace characters in the
@@ -1454,7 +1454,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def istitle(self):
         """Return true if the string is a titlecased string and there is at
@@ -1463,7 +1463,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def isupper(self):
         """Return true if all cased characters in the string are uppercase
@@ -1471,7 +1471,7 @@ class str(object):
 
         :rtype: bool
         """
-        pass
+        return False
 
     def join(self, iterable):
         """Return a string which is the concatenation of the strings in the
@@ -1480,7 +1480,7 @@ class str(object):
         :type iterable: collections.Iterable[str]
         :rtype: str
         """
-        pass
+        return ''
 
     def ljust(self, width, fillchar=' '):
         """Return the string left justified in a string of length width.
@@ -1490,7 +1490,7 @@ class str(object):
         :type fillchar: str
         :rtype: str
         """
-        pass
+        return ''
 
     def lower(self):
         """Return a copy of the string with all the cased characters
@@ -1498,7 +1498,7 @@ class str(object):
 
         :rtype: str
         """
-        pass
+        return ''
 
     def lstrip(self, chars=None):
         """Return a copy of the string with leading characters removed.
@@ -1506,7 +1506,7 @@ class str(object):
         :type chars: str | None
         :rtype: str
         """
-        pass
+        return ''
 
     def partition(self, sep):
         """Split the string at the first occurrence of sep, and return a
@@ -1516,7 +1516,7 @@ class str(object):
         :type sep: str
         :rtype: (str, str, str)
         """
-        pass
+        return '', '', ''
 
     def replace(self, old, new, count=-1):
         """Return a copy of the string with all occurrences of substring
@@ -1527,7 +1527,7 @@ class str(object):
         :type count: numbers.Integral
         :rtype: str
         """
-        pass
+        return ''
 
     def rfind(self, sub, start=None, end=None):
         """Return the highest index in the string where substring sub is
@@ -1538,7 +1538,7 @@ class str(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def rindex(self, sub, start=None, end=None):
         """Like rfind(), but raise ValueError when the substring is not
@@ -1549,7 +1549,7 @@ class str(object):
         :type end: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def rjust(self, width, fillchar=' '):
         """Return the string right justified in a string of length width.
@@ -1559,7 +1559,7 @@ class str(object):
         :type fillchar: str
         :rtype: str
         """
-        pass
+        return ''
 
     def rpartition(self, sep):
         """Split the string at the last occurrence of sep, and return a
@@ -1569,7 +1569,7 @@ class str(object):
         :type sep: str
         :rtype: (str, str, str)
         """
-        pass
+        return '', '', ''
 
     def rsplit(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1579,7 +1579,7 @@ class str(object):
         :type maxsplit: numbers.Integral
         :rtype: list[str]
         """
-        pass
+        return []
 
     def rstrip(self, chars=None):
         """Return a copy of the string with trailing characters removed.
@@ -1587,7 +1587,7 @@ class str(object):
         :type chars: str | None
         :rtype: str
         """
-        pass
+        return ''
 
     def split(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1597,7 +1597,7 @@ class str(object):
         :type maxsplit: numbers.Integral
         :rtype: list[str]
         """
-        pass
+        return []
 
     def splitlines(self, keepends):
         """Return a list of the lines in the string, breaking at line
@@ -1606,7 +1606,7 @@ class str(object):
         :type keepends: bool
         :rtype: list[str]
         """
-        pass
+        return []
 
     def startswith(self, prefix, start=None, end=None):
         """Return True if string starts with the prefix, otherwise return
@@ -1617,7 +1617,7 @@ class str(object):
         :type end: numbers.Integral | None
         :rtype: bool
         """
-        pass
+        return False
 
     def strip(self, chars=None):
         """Return a copy of the string with the leading and trailing
@@ -1626,7 +1626,7 @@ class str(object):
         :type chars: str | None
         :rtype: str
         """
-        pass
+        return ''
 
     def swapcase(self):
         """Return a copy of the string with uppercase characters converted
@@ -1634,7 +1634,7 @@ class str(object):
 
         :rtype: str
         """
-        pass
+        return ''
 
     def title(self):
         """Return a titlecased version of the string where words start with
@@ -1642,7 +1642,7 @@ class str(object):
 
         :rtype: str
         """
-        pass
+        return ''
 
     def upper(self):
         """Return a copy of the string with all the cased characters
@@ -1650,7 +1650,7 @@ class str(object):
 
         :rtype: str
         """
-        pass
+        return ''
 
     def zfill(self, width):
         """Return the numeric string left filled with zeros in a string of
@@ -1659,7 +1659,7 @@ class str(object):
         :type width: numbers.Integral
         :rtype: str
         """
-        pass
+        return ''
 
 
 class list(object):
@@ -1671,6 +1671,7 @@ class list(object):
         :type iterable: collections.Iterable[T]
         :rtype: list[T]
         """
+        pass
 
     def __add__(self, y):
         """The concatenation of x and y.
@@ -1678,7 +1679,7 @@ class list(object):
         :type y: list[T]
         :rtype: list[T]
         """
-        pass
+        return []
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -1686,7 +1687,7 @@ class list(object):
         :type n: numbers.Integral
         :rtype: list[T]
         """
-        pass
+        return []
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1694,7 +1695,7 @@ class list(object):
         :type n: numbers.Integral
         :rtype: list[T]
         """
-        pass
+        return []
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -1742,7 +1743,7 @@ class list(object):
         :type x: T
         :rtype: int
         """
-        pass
+        return 0
 
     def index(self, x, i=None, j=None):
         """Index of the first occurrence of x in the sequence.
@@ -1752,7 +1753,7 @@ class list(object):
         :type j: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
     def insert(self, i, x):
         """Inserts x into the sequence at the index given by i.
@@ -1785,6 +1786,7 @@ class list(object):
         :type cmp: ((T, T) -> int) | None
         :type key: ((T) -> object) | None
         :type reverse: bool
+        :rtype: None
         """
         pass
 
@@ -1830,7 +1832,7 @@ class tuple(object):
         :type x: object
         :rtype: int
         """
-        pass
+        return 0
 
     def index(self, x, i=None, j=None):
         """Index of the first occurrence of x in the sequence.
@@ -1840,7 +1842,7 @@ class tuple(object):
         :type j: numbers.Integral | none
         :rtype: int
         """
-        pass
+        return 0
 
 
 class dict(object):
@@ -1859,7 +1861,7 @@ class dict(object):
 
         :rtype: int
         """
-        pass
+        return 0
 
     def __getitem__(self, key):
         """Return the item of d with key key.
@@ -1891,7 +1893,7 @@ class dict(object):
 
         :rtype: dict[T, V]
         """
-        pass
+        return self
 
     @classmethod
     def fromkeys(cls, seq, value=None):
@@ -1901,7 +1903,7 @@ class dict(object):
         :type value: V
         :rtype: dict[T, V]
         """
-        pass
+        return {}
 
     def get(self, key, default=None):
         """Return the value for key if key is in the dictionary, else default.
@@ -1912,21 +1914,19 @@ class dict(object):
         """
         pass
 
-
     def items(self):
         """Return a copy of the dictionary's list of (key, value) pairs.
 
-        :rtype: list[T, V]
+        :rtype: collections.Iterable[T, V]
         """
-        pass
-
+        return []
 
     def keys(self):
         """Return a copy of the dictionary's list of keys.
 
         :rtype: collections.Iterable[T]
         """
-        pass
+        return []
 
     def pop(self, key, default=None):
         """If key is in the dictionary, remove it and return its value, else
@@ -1967,9 +1967,9 @@ class dict(object):
     def values():
         """Return a copy of the dictionary's list of values.
 
-        :rtype: list[V]
+        :rtype: collections.Iterable[V]
         """
-        pass
+        return []
 
 
 class __generator(object):

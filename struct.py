@@ -11,7 +11,7 @@ def pack(fmt, *values):
     :type fmt: bytes | unicode
     :rtype: bytes
     """
-    pass
+    return bytes()
 
 
 def unpack(fmt, string):
@@ -33,7 +33,7 @@ if sys.version_info >= (2, 5):
         :type offset: int | long
         :rtype: bytes
         """
-        pass
+        return bytes()
 
     def unpack_from(fmt, buffer, offset=0):
         """Unpack the buffer according to the given format.
@@ -52,7 +52,7 @@ def calcsize(fmt):
     :type fmt: bytes | unicode
     :rtype: int
     """
-    pass
+    return 0
 
 
 if sys.version >= (2, 5):
@@ -80,7 +80,7 @@ if sys.version >= (2, 5):
 
             :rtype: bytes
             """
-            pass
+            return bytes()
 
         def pack_into(self, buffer, offset, *values):
             """Identical to the pack_into() function, using the compiled format.
@@ -88,7 +88,7 @@ if sys.version >= (2, 5):
             :type offset: int | long
             :rtype: bytes
             """
-            pass
+            return bytes()
 
         def unpack(self, string):
             """Identical to the unpack() function, using the compiled format.

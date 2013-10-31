@@ -251,6 +251,17 @@ def pow(x, y, z=None):
     return 0
 
 
+def print(*objects, sep=' ', end='\n', file=None, flush=False):
+    """Print objects to the stream file, separated by sep and followed by end.
+
+    :type sep: str
+    :type end: str
+    :type flush: bool
+    :rtype: None
+    """
+    pass
+
+
 class range(object):
     """range object."""
 

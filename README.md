@@ -55,14 +55,34 @@ repository is hosted on GitHub.
 Conventions
 -----------
 
+Skeletons should contain syntactically correct Python code, preferably compatible
+with Python 2.6-3.3.
+
 Skeletons should respect PEP-8 and PEP-257 style guides.
 
-TODO: Document how to reference the original module from a skeleton file.
+If you need to reference the members of the original module of a skeleton, you
+should import it explicitly. For example, in a skeleton for the `foo` module:
 
-TODO: Document what to put into the body of a skeleton function.
+    import foo
 
-TODO: Document the versioning policy: the most recent released API of a
-library + deprecation warnings for obsolete functions/classes.
+
+    class C(foo.B):
+        def bar():
+            """Do bar and return Bar.
+
+            :rtype: foo.Bar
+            """
+            return foo.Bar()
+
+Modules can be referenced in docstring without explicit imports.
+
+The body of a function in a skeleton file should consist of a single `return`
+statement that returns a simple value of the declared return type (e.g. `0`
+for `int`, `False` for `bool`, Foo() for `Foo`). If the function returns
+something non-trivial, its may consist of a `pass` statement.
+
+
+### Types
 
 The most simple way of specifying types in skeletons is Sphinx docstrings.
 Function annotations could be used for specifying types, but they are
@@ -99,13 +119,41 @@ function types), but its semantics differs from Python (no `|`, no implicitly
 visible names, no generic types). So you cannot use these expressions in
 Python 3 function annotations. See also related work below.
 
+If you want to create a parameterized class, you should define its parameters
+in the mock return type of a constructor:
+
+    class C(object):
+        """Some collection C that can contain values of T."""
+
+        def __init__(self, value):
+            """Initialize C.
+
+            :type value: T
+            :rtype: C[T]
+            """
+            pass
+
+        def get(self):
+            """Return the contained value.
+
+            :rtype: T
+            """
+            pass
+
+
+### Versioning
+
 The recommended way of checking the version of Python is:
 
     import sys
 
+
     if sys.version_info >= (2, 7) and sys.version_info < (3,):
         def from_27_until_30():
             pass
+
+A skeleton should document the most recently released version of a library. Use
+deprecation warnings for functions that have been removed from the API.
 
 
 Related Work

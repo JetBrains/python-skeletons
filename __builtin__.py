@@ -2199,8 +2199,8 @@ class dict(object):
         """
         return self
 
-    @classmethod
-    def fromkeys(cls, seq, value=None):
+    @staticmethod
+    def fromkeys(seq, value=None):
         """Create a new dictionary with keys from seq and values set to value.
 
         :type seq: collections.Iterable[T]

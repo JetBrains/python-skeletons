@@ -1,6 +1,7 @@
 """Skeleton for 'os' stdlib module."""
 
 
+from __future__ import unicode_literals
 import sys
 
 
@@ -623,7 +624,7 @@ if sys.version_info < (3, 0):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
 
 def chflags(path, flags):
@@ -1250,4 +1251,4 @@ def urandom(n):
     :type n: int
     :rtype: bytes
     """
-    return bytes()
+    return b''

@@ -115,7 +115,7 @@ class Popen(object):
         :type input: bytes | unicode | None
         :rtype: (bytes, bytes)
         """
-        pass
+        return b'', b''
 
     def send_signal(self, signal):
         """Sends the signal signal to the child.

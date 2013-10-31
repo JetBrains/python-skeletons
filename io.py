@@ -1,6 +1,7 @@
 """Skeleton for 'io' stdlib module."""
 
 
+from __future__ import unicode_literals
 import sys
 import io
 
@@ -160,7 +161,7 @@ class RawIOBase(io.IOBase):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def readall(self):
         """Read and return all the bytes from the stream until EOF, using
@@ -168,7 +169,7 @@ class RawIOBase(io.IOBase):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def readinto(self, b):
         """Read up to len(b) bytes into bytearray b and return the number of
@@ -215,7 +216,7 @@ class BufferedIOBase(io.IOBase):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
 
 class FileIO(io.RawIOBase):
@@ -291,7 +292,7 @@ class FileIO(io.RawIOBase):
         :type limit: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def readlines(self, hint=-1):
         """Read and return a list of lines from the stream.
@@ -354,7 +355,7 @@ class FileIO(io.RawIOBase):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def readall(self):
         """Read and return all the bytes from the stream until EOF, using
@@ -362,7 +363,7 @@ class FileIO(io.RawIOBase):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def readinto(self, b):
         """Read up to len(b) bytes into bytearray b and return the number of
@@ -407,7 +408,7 @@ class BytesIO(io.BufferedIOBase):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
 
 class TextIOBase(io.IOBase):
@@ -445,7 +446,7 @@ class TextIOBase(io.IOBase):
         :type n: numbers.Integral | None
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def write(self, s):
         """Write the unicode string s to the stream and return the number of
@@ -479,7 +480,7 @@ class TextIOWrapper(io.TextIOBase):
         :type line_buffering: bool
         :rtype: io.TextIOWrapper[unicode]
         """
-        self.name = unicode()
+        self.name = ''
         self.buffer = buffer
         self.encoding = encoding
         self.errors = errors
@@ -609,7 +610,7 @@ class TextIOWrapper(io.TextIOBase):
         :type n: numbers.Integral | None
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def write(self, s):
         """Write the unicode string s to the stream and return the number of

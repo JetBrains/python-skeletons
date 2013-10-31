@@ -32,9 +32,9 @@ def bin(number):
     """Return the binary representation of an integer or long integer.
 
     :type number: numbers.Number
-    :rtype: bytes
+    :rtype: str
     """
-    return bytes()
+    return ''
 
 
 def callable(object):
@@ -941,7 +941,7 @@ class bytes(object):
         :type y: bytes
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -949,7 +949,7 @@ class bytes(object):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -957,7 +957,7 @@ class bytes(object):
         :type n: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -980,7 +980,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def center(self, width, fillchar=' '):
         """Return centered in a string of length width.
@@ -989,7 +989,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def count(self, sub, start=None, end=None):
         """Return the number of non-overlapping occurrences of substring
@@ -1108,7 +1108,7 @@ class bytes(object):
         :type iterable: collections.Iterable[bytes]
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def ljust(self, width, fillchar=' '):
         """Return the string left justified in a string of length width.
@@ -1118,7 +1118,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def lower(self):
         """Return a copy of the string with all the cased characters
@@ -1126,7 +1126,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def lstrip(self, chars=None):
         """Return a copy of the string with leading characters removed.
@@ -1134,7 +1134,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def partition(self, sep):
         """Split the string at the first occurrence of sep, and return a
@@ -1144,7 +1144,7 @@ class bytes(object):
         :type sep: bytes
         :rtype: (bytes, bytes, bytes)
         """
-        return bytes(), bytes(), bytes()
+        return b'', b'', b''
 
     def replace(self, old, new, count=-1):
         """Return a copy of the string with all occurrences of substring
@@ -1155,7 +1155,7 @@ class bytes(object):
         :type count: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def rfind(self, sub, start=None, end=None):
         """Return the highest index in the string where substring sub is
@@ -1187,7 +1187,7 @@ class bytes(object):
         :type fillchar: bytes
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def rpartition(self, sep):
         """Split the string at the last occurrence of sep, and return a
@@ -1197,7 +1197,7 @@ class bytes(object):
         :type sep: bytes
         :rtype: (bytes, bytes, bytes)
         """
-        return bytes(), bytes(), bytes()
+        return b'', b'', b''
 
     def rsplit(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1215,7 +1215,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def split(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1254,7 +1254,7 @@ class bytes(object):
         :type chars: bytes | None
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def swapcase(self):
         """Return a copy of the string with uppercase characters converted
@@ -1262,7 +1262,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def title(self):
         """Return a titlecased version of the string where words start with
@@ -1270,7 +1270,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def upper(self):
         """Return a copy of the string with all the cased characters
@@ -1278,7 +1278,7 @@ class bytes(object):
 
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def zfill(self, width):
         """Return the numeric string left filled with zeros in a string of
@@ -1287,7 +1287,7 @@ class bytes(object):
         :type width: numbers.Integral
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
 
 class str(object):
@@ -1381,7 +1381,7 @@ class str(object):
         :type errors: str
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def endswith(self, suffix, start=None, end=None):
         """Return True if the string ends with the specified suffix,

@@ -1,6 +1,7 @@
 """Skeletons for Python 2 built-in symbols."""
 
 
+from __future__ import unicode_literals
 import sys
 
 
@@ -37,7 +38,7 @@ def bin(number):
     :type number: numbers.Number
     :rtype: bytes
     """
-    return bytes()
+    return b''
 
 
 def callable(object):
@@ -55,7 +56,7 @@ def chr(i):
     :type i: numbers.Integral
     :rtype: bytes
     """
-    return bytes()
+    return b''
 
 
 def cmp(x, y):
@@ -138,9 +139,9 @@ def hex(number):
     """Return the hexadecimal representation of an integer or long integer.
 
     :type number: numbers.Integral
-    :rtype: string
+    :rtype: bytes
     """
-    return ''
+    return b''
 
 
 def id(object):
@@ -222,9 +223,9 @@ def oct(number):
     """Return the octal representation of an integer or long integer.
 
     :type number: numbers.Integral
-    :rtype: string
+    :rtype: bytes
     """
-    return ''
+    return b''
 
 
 def open(name, mode='r', buffering=-1, encoding=None, errors=None, newline=None,
@@ -290,9 +291,9 @@ def repr(object):
     """
     Return the canonical string representation of the object.
 
-    :rtype: string
+    :rtype: bytes
     """
-    return ''
+    return b''
 
 
 def round(number, ndigits=None):
@@ -324,7 +325,7 @@ def unichr(i):
     :type i: numbers.Integral
     :rtype: unicode
     """
-    return unicode()
+    return ''
 
 
 def vars(object=None):
@@ -1216,7 +1217,7 @@ class str(basestring):
         :type y: string
         :rtype: string
         """
-        return ''
+        return b''
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -1224,14 +1225,14 @@ class str(basestring):
         :type n: numbers.Integral
         :rtype: str
         """
-        return ''
+        return b''
 
     def __mod__(self, y):
         """x % y.
 
         :rtype: string
         """
-        return ''
+        return b''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1239,7 +1240,7 @@ class str(basestring):
         :type n: numbers.Integral
         :rtype: str
         """
-        return ''
+        return b''
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -1247,7 +1248,7 @@ class str(basestring):
         :type y: numbers.Integral
         :rtype: str
         """
-        return ''
+        return b''
 
     def __iter__(self):
         """Iterator over bytes.
@@ -1262,7 +1263,7 @@ class str(basestring):
 
         :rtype: str
         """
-        return ''
+        return b''
 
     def center(self, width, fillchar=' '):
         """Return centered in a string of length width.
@@ -1271,7 +1272,7 @@ class str(basestring):
         :type fillchar: str
         :rtype: str
         """
-        return ''
+        return b''
 
     def count(self, sub, start=None, end=None):
         """Return the number of non-overlapping occurrences of substring
@@ -1291,7 +1292,7 @@ class str(basestring):
         :type errors: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def encode(self, encoding='utf-8', errors='strict'):
         """Return an encoded version of the string as a bytes object.
@@ -1300,7 +1301,7 @@ class str(basestring):
         :type errors: string
         :rtype: str
         """
-        return ''
+        return b''
 
     def endswith(self, suffix, start=None, end=None):
         """Return True if the string ends with the specified suffix,
@@ -1409,7 +1410,7 @@ class str(basestring):
         :type fillchar: str
         :rtype: str
         """
-        return ''
+        return b''
 
     def lower(self):
         """Return a copy of the string with all the cased characters
@@ -1417,15 +1418,15 @@ class str(basestring):
 
         :rtype: str
         """
-        return ''
+        return b''
 
     def lstrip(self, chars=None):
         """Return a copy of the string with leading characters removed.
 
         :type chars: string | None
-        :rtype: string
+        :rtype: str
         """
-        return ''
+        return b''
 
     def partition(self, sep):
         """Split the string at the first occurrence of sep, and return a
@@ -1435,7 +1436,7 @@ class str(basestring):
         :type sep: string
         :rtype: (str, str, str)
         """
-        return '', '', ''
+        return b'', b'', b''
 
     def replace(self, old, new, count=-1):
         """Return a copy of the string with all occurrences of substring
@@ -1488,7 +1489,7 @@ class str(basestring):
         :type sep: string
         :rtype: (str, str, str)
         """
-        return '', '', ''
+        return b'', b'', b''
 
     def rsplit(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1506,7 +1507,7 @@ class str(basestring):
         :type chars: string | None
         :rtype: str
         """
-        return ''
+        return b''
 
     def split(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1545,7 +1546,7 @@ class str(basestring):
         :type chars: string | None
         :rtype: str
         """
-        return ''
+        return b''
 
     def swapcase(self):
         """Return a copy of the string with uppercase characters converted
@@ -1553,7 +1554,7 @@ class str(basestring):
 
         :rtype: str
         """
-        return ''
+        return b''
 
     def title(self):
         """Return a titlecased version of the string where words start with
@@ -1561,7 +1562,7 @@ class str(basestring):
 
         :rtype: str
         """
-        return ''
+        return b''
 
     def upper(self):
         """Return a copy of the string with all the cased characters
@@ -1569,7 +1570,7 @@ class str(basestring):
 
         :rtype: str
         """
-        return ''
+        return b''
 
     def zfill(self, width):
         """Return the numeric string left filled with zeros in a string of
@@ -1578,7 +1579,7 @@ class str(basestring):
         :type width: numbers.Integral
         :rtype: str
         """
-        return ''
+        return b''
 
 
 class unicode(basestring):
@@ -1597,7 +1598,7 @@ class unicode(basestring):
         :type y: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def __mul__(self, n):
         """n shallow copies of x concatenated.
@@ -1605,14 +1606,14 @@ class unicode(basestring):
         :type n: numbers.Integral
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def __mod__(self, y):
         """x % y.
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1620,7 +1621,7 @@ class unicode(basestring):
         :type n: numbers.Integral
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def __getitem__(self, y):
         """y-th item of x, origin 0.
@@ -1628,7 +1629,7 @@ class unicode(basestring):
         :type y: numbers.Integral
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def __iter__(self):
         """Iterator over bytes.
@@ -1643,7 +1644,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def center(self, width, fillchar=' '):
         """Return centered in a string of length width.
@@ -1652,7 +1653,7 @@ class unicode(basestring):
         :type fillchar: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def count(self, sub, start=None, end=None):
         """Return the number of non-overlapping occurrences of substring
@@ -1672,7 +1673,7 @@ class unicode(basestring):
         :type errors: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def encode(self, encoding='utf-8', errors='strict'):
         """Return an encoded version of the string as a bytes object.
@@ -1681,7 +1682,7 @@ class unicode(basestring):
         :type errors: string
         :rtype: bytes
         """
-        return bytes()
+        return b''
 
     def endswith(self, suffix, start=None, end=None):
         """Return True if the string ends with the specified suffix,
@@ -1780,7 +1781,7 @@ class unicode(basestring):
         :type iterable: collections.Iterable[string]
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def ljust(self, width, fillchar=' '):
         """Return the string left justified in a string of length width.
@@ -1790,7 +1791,7 @@ class unicode(basestring):
         :type fillchar: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def lower(self):
         """Return a copy of the string with all the cased characters
@@ -1798,7 +1799,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def lstrip(self, chars=None):
         """Return a copy of the string with leading characters removed.
@@ -1806,7 +1807,7 @@ class unicode(basestring):
         :type chars: string | None
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def partition(self, sep):
         """Split the string at the first occurrence of sep, and return a
@@ -1816,7 +1817,7 @@ class unicode(basestring):
         :type sep: string
         :rtype: (unicode, unicode, unicode)
         """
-        return unicode(), unicode(), unicode()
+        return '', '', ''
 
     def replace(self, old, new, count=-1):
         """Return a copy of the string with all occurrences of substring
@@ -1827,7 +1828,7 @@ class unicode(basestring):
         :type count: numbers.Integral
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def rfind(self, sub, start=None, end=None):
         """Return the highest index in the string where substring sub is
@@ -1859,7 +1860,7 @@ class unicode(basestring):
         :type fillchar: string
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def rpartition(self, sep):
         """Split the string at the last occurrence of sep, and return a
@@ -1869,7 +1870,7 @@ class unicode(basestring):
         :type sep: string
         :rtype: (unicode, unicode, unicode)
         """
-        return unicode(), unicode(), unicode()
+        return '', '', ''
 
     def rsplit(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1887,7 +1888,7 @@ class unicode(basestring):
         :type chars: string | None
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def split(self, sep=None, maxsplit=-1):
         """Return a list of the words in the string, using sep as the
@@ -1926,7 +1927,7 @@ class unicode(basestring):
         :type chars: string | None
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def swapcase(self):
         """Return a copy of the string with uppercase characters converted
@@ -1934,7 +1935,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def title(self):
         """Return a titlecased version of the string where words start with
@@ -1942,7 +1943,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def upper(self):
         """Return a copy of the string with all the cased characters
@@ -1950,7 +1951,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
     def zfill(self, width):
         """Return the numeric string left filled with zeros in a string of
@@ -1959,7 +1960,7 @@ class unicode(basestring):
         :type width: numbers.Integral
         :rtype: unicode
         """
-        return unicode()
+        return ''
 
 
 class list(object):
@@ -2436,26 +2437,25 @@ class __generator(object):
         """
         pass
 
-    if sys.version_info >= (2, 5):
-        def close(self):
-            """Raises new GeneratorExit exception inside the generator to
-            terminate the iteration.
+    def close(self):
+        """Raises new GeneratorExit exception inside the generator to
+        terminate the iteration.
 
-            :rtype: None
-            """
-            pass
+        :rtype: None
+        """
+        pass
 
-        def send(self, value):
-            """Resumes the generator and "sends" a value that becomes the
-            result of the current yield-expression.
+    def send(self, value):
+        """Resumes the generator and "sends" a value that becomes the
+        result of the current yield-expression.
 
-            :rtype: T
-            """
-            pass
+        :rtype: T
+        """
+        pass
 
-        def throw(self, type, value=None, traceback=None):
-            """Used to raise an exception inside the generator.
+    def throw(self, type, value=None, traceback=None):
+        """Used to raise an exception inside the generator.
 
-            :rtype: None
-            """
-            pass
+        :rtype: None
+        """
+        pass

@@ -11,7 +11,7 @@ def abspath(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def basename(path):
@@ -20,7 +20,7 @@ def basename(path):
     :type path: T <= bytes | unicode
     :rtype: T
     """
-    pass
+    return path
 
 
 def commonprefix(list):

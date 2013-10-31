@@ -85,7 +85,7 @@ def rmtree(path, ignore_errors=False, onerror=None):
     :type path: bytes | unicode
     :type ignore_errors: bool
     :type onerror: (unknown, bytes | unicode, unknown) -> None
-    :rtype: none
+    :rtype: None
     """
 
 

@@ -1227,7 +1227,7 @@ class bytes(object):
         """
         return []
 
-    def splitlines(self, keepends):
+    def splitlines(self, keepends=False):
         """Return a list of the lines in the string, breaking at line
         boundaries.
 
@@ -1601,7 +1601,7 @@ class str(object):
         """
         return []
 
-    def splitlines(self, keepends):
+    def splitlines(self, keepends=False):
         """Return a list of the lines in the string, breaking at line
         boundaries.
 

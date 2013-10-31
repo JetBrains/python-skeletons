@@ -1,4 +1,8 @@
-"""Skeleton for 'nose.tools' module."""
+"""Skeleton for 'nose.tools' module.
+
+Project: nose 1.3 <https://nose.readthedocs.org/>
+Skeleton by: Andrey Vlasovskikh <andrey.vlasovskikh@jetbrains.com>
+"""
 
 
 import sys

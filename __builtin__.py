@@ -2155,7 +2155,7 @@ class dict(object):
     def __init__(self, iterable=None, **kwargs):
         """Create a dictionary object.
 
-        :type iterable: collections.Iterable[T, V]
+        :type iterable: collections.Iterable[(T, V)]
         :rtype: dict[T, V]
         """
         pass
@@ -2229,14 +2229,14 @@ class dict(object):
     def items(self):
         """Return a copy of the dictionary's list of (key, value) pairs.
 
-        :rtype: list[T, V]
+        :rtype: list[(T, V)]
         """
         return []
 
     def iteritems(self):
         """Return an iterator over the dictionary's (key, value) pairs.
 
-        :rtype: collections.Iterable[T, V]
+        :rtype: collections.Iterable[(T, V)]
         """
         return []
 
@@ -2257,7 +2257,7 @@ class dict(object):
     def keys(self):
         """Return a copy of the dictionary's list of keys.
 
-        :rtype: collections.Iterable[T]
+        :rtype: list[T]
         """
         return []
 
@@ -2292,7 +2292,7 @@ class dict(object):
         """Update the dictionary with the key/value pairs from other,
         overwriting existing keys.
 
-        :type other: dict[T, V] | collections.Iterable[T, V]
+        :type other: dict[T, V] | collections.Iterable[(T, V)]
         :rtype: None
         """
         pass

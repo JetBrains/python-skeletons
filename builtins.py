@@ -1919,7 +1919,7 @@ class dict(object):
     def items(self):
         """Return a copy of the dictionary's list of (key, value) pairs.
 
-        :rtype: collections.Iterable[T, V]
+        :rtype: collections.Iterable[(T, V)]
         """
         return []
 
@@ -1961,7 +1961,7 @@ class dict(object):
         """Update the dictionary with the key/value pairs from other,
         overwriting existing keys.
 
-        :type other: dict[T, V] | collections.Iterable[T, V]
+        :type other: dict[T, V] | collections.Iterable[(T, V)]
         :rtype: None
         """
         pass

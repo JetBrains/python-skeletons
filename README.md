@@ -155,6 +155,9 @@ The recommended way of checking the version of Python is:
 A skeleton should document the most recently released version of a library. Use
 deprecation warnings for functions that have been removed from the API.
 
+Skeletons for built-in symbols is an exception. There are two modules:
+`__builtin__` for Python 2 and `builtins` for Python 3.
+
 
 Related Work
 ------------

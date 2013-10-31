@@ -78,7 +78,7 @@ Modules can be referenced in docstring without explicit imports.
 
 The body of a function in a skeleton file should consist of a single `return`
 statement that returns a simple value of the declared return type (e.g. `0`
-for `int`, `False` for `bool`, Foo() for `Foo`). If the function returns
+for `int`, `False` for `bool`, `Foo()` for `Foo`). If the function returns
 something non-trivial, its may consist of a `pass` statement.
 
 

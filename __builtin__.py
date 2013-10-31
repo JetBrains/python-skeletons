@@ -1585,10 +1585,12 @@ class str(basestring):
 class unicode(basestring):
     """Unicode string object."""
 
-    def __init__(self, object=''):
+    def __init__(self, object='', encoding='utf-8', errors='strict'):
         """Construct an immutable Unicode string.
 
         :type object: object
+        :type encoding: string
+        :type errors: string
         """
         pass
 

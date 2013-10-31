@@ -1293,10 +1293,12 @@ class bytes(object):
 class str(object):
     """String object."""
 
-    def __init__(self, object=''):
+    def __init__(self, object='', encoding='utf-8', errors='strict'):
         """Construct an immutable string.
 
         :type object: object
+        :type encoding: str
+        :type errors: str
         """
         pass
 

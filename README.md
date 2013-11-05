@@ -58,7 +58,8 @@ Conventions
 Skeletons should contain syntactically correct Python code, preferably compatible
 with Python 2.6-3.3.
 
-Skeletons should respect PEP-8 and PEP-257 style guides.
+Skeletons should respect [PEP-8](http://www.python.org/dev/peps/pep-0008/) and
+[PEP-257](http://www.python.org/dev/peps/pep-0257/) style guides.
 
 If you need to reference the members of the original module of a skeleton, you
 should import it explicitly. For example, in a skeleton for the `foo` module:
@@ -84,12 +85,16 @@ something non-trivial, its may consist of a `pass` statement.
 
 ### Types
 
-The most simple way of specifying types in skeletons is Sphinx docstrings.
-Function annotations could be used for specifying types, but they are
-available only for Python 3.
+There is no standard notation for specifying types in Python code. We would
+like this standard to emerge, see the related work below.
 
-There is no standard notation for specifying types in Python code. We propose
-the following notation:
+The current understanding is that a standard for optional type annotations in
+Python could use the syntax of function annotations in Python 3 and decorators
+as a fallback in Python 2. The type system should be relatively simple, but it
+has to include parametric (generic) types for collections and probably more.
+
+As a temporary solution, we propose a simple way of specifying types in
+skeletons using Sphinx docstrings using the following notation:
 
     Foo                # Class Foo visible in the current scope
     x.y.Bar            # Class Bar from x.y module
@@ -117,7 +122,7 @@ There are several shortcuts available:
 The syntax is a subject to change. It is almost compatible to Python (except
 function types), but its semantics differs from Python (no `|`, no implicitly
 visible names, no generic types). So you cannot use these expressions in
-Python 3 function annotations. See also related work below.
+Python 3 function annotations.
 
 If you want to create a parameterized class, you should define its parameters
 in the mock return type of a constructor:
@@ -181,6 +186,9 @@ adopted at the moment:
 * Expression-based [typeannotations](https://github.com/ceronman/typeannotations)
   library for Python 3
 * [mypy](http://www.mypy-lang.org/) Python dialect
+
+See also the notes on function annotations in
+[PEP-8](http://www.python.org/dev/peps/pep-0008/).
 
 
 PyCharm / IntelliJ

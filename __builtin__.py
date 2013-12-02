@@ -1232,7 +1232,7 @@ class str(basestring):
 
         :rtype: string
         """
-        return b''
+        return ''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1615,7 +1615,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return ''
+        return u''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.

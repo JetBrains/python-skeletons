@@ -1230,7 +1230,7 @@ class str(basestring):
     def __mod__(self, y):
         """x % y.
 
-        :rtype: string
+        :rtype: str
         """
         return ''
 

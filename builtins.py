@@ -939,10 +939,12 @@ class complex(object):
 class bytes(object):
     """Bytes object."""
 
-    def __init__(self, object=''):
+    def __init__(self, source='', encoding='utf8', errors='strict'):
         """Construct an immutable array of bytes.
 
-        :type object: object
+        :type source: object
+        :type encoding: str
+        :type errors: str
         """
         pass
 

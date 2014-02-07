@@ -951,7 +951,7 @@ def walk(top, topdown=True, onerror=None, followlinks=False):
     :type top: T <= bytes | unicode
     :type topdown: bool
     :type onerror: ((Exception) -> None) | None
-    :rtype: collections.Iterable[(T, list[T], list[T])]
+    :rtype: collections.Iterator[(T, list[T], list[T])]
     """
     return []
 

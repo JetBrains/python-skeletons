@@ -510,9 +510,9 @@ def open(file, flags, mode=0777):
     :type file: string
     :type flags: int
     :type mode: int
-    :rtype: file
+    :rtype: int
     """
-    return file()
+    return 0
 
 
 def openpty():

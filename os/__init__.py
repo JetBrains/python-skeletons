@@ -793,11 +793,12 @@ def mkdir(path, mode=0o777):
     pass
 
 
-def makedirs(path, mode=0o777):
+def makedirs(path, mode=0o777, exist_ok=False):
     """Recursive directory creation function.
 
     :type path: bytes | unicode
     :type mode: int
+    :type exist_ok: int
     :rtype: None
     """
     pass

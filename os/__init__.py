@@ -503,7 +503,7 @@ def lseek(fd, pos, how):
     pass
 
 
-def open(file, flags, mode=0777):
+def open(file, flags, mode=0o777):
     """Open the file file and set various flags according to flags and possibly
     its mode according to mode.
 
@@ -731,7 +731,7 @@ def lstat(path):
     pass
 
 
-def mkfifo(path, mode=0666):
+def mkfifo(path, mode=0o666):
     """Create a FIFO (a named pipe) named path with numeric mode mode.
 
     :type path: bytes | unicode
@@ -741,7 +741,7 @@ def mkfifo(path, mode=0666):
     pass
 
 
-def mknod(filename, mode=0600, device=0):
+def mknod(filename, mode=0o600, device=0):
     """Create a filesystem node (file, device special file or named pipe) named
     filename.
 
@@ -783,7 +783,7 @@ def makedev(major, minor):
     return 0
 
 
-def mkdir(path, mode=0777):
+def mkdir(path, mode=0o777):
     """Create a directory named path with numeric mode mode.
 
     :type path: bytes | unicode
@@ -793,7 +793,7 @@ def mkdir(path, mode=0777):
     pass
 
 
-def makedirs(path, mode=0777):
+def makedirs(path, mode=0o777):
     """Recursive directory creation function.
 
     :type path: bytes | unicode

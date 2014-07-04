@@ -337,6 +337,15 @@ def vars(object=None):
     return {}
 
 
+def zip(*iterables):
+    """This function returns a list of tuples, where the i-th tuple contains
+    the i-th element from each of the argument sequences or iterables.
+
+    :rtype: list[tuple]
+    """
+    return []
+
+
 class object:
     """ The most base type."""
 

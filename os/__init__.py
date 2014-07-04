@@ -869,10 +869,12 @@ def rmdir(path):
     pass
 
 
-def stat(path):
+def stat(path, dir_fd=None, follow_symlinks=True):
     """Perform the equivalent of a stat() system call on the given path.
 
-    :type path: bytes | unicode
+    :type path: bytes | unicode | int
+    :type dir_fd: int | None
+    :type follow_symlinks: bool | None
     :rtype: os.stat_result
     """
     pass

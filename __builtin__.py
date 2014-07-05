@@ -105,7 +105,6 @@ def getattr(object, name, default=None):
     doesn't exist; without it, an exception is raised in that case.
 
     :type name: string
-    :rtype: object | unknown
     """
     pass
 
@@ -335,6 +334,15 @@ def vars(object=None):
     :rtype: dict[string, unknown]
     """
     return {}
+
+
+def zip(*iterables):
+    """This function returns a list of tuples, where the i-th tuple contains
+    the i-th element from each of the argument sequences or iterables.
+
+    :rtype: list[tuple]
+    """
+    return []
 
 
 class object:

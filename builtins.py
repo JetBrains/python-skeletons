@@ -93,7 +93,6 @@ def getattr(object, name, default=None):
     doesn't exist; without it, an exception is raised in that case.
 
     :type name: str
-    :rtype: object | unknown
     """
     pass
 

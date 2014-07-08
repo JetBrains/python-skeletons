@@ -120,35 +120,43 @@ class ndarray(object):
     pass
 
     def __mul__(self, y): # real signature unknown; restored from __doc__
-        """x.__mul__(y) <==> x*y
+        """
+            x.__mul__(y) <==> x*y
 
             Returns
             -------
-            out : ndarray"""
+            out : ndarray
+        """
         pass
 
     def __rmul__(self, y): # real signature unknown; restored from __doc__
-        """x.__rmul__(y) <==> x*y
+        """
+            x.__rmul__(y) <==> x*y
 
             Returns
             -------
-            out : ndarray"""
+            out : ndarray
+        """
         pass
 
     def __abs__(self): # real signature unknown; restored from __doc__
-        """x.__abs__() <==> abs(x)
+        """
+            x.__abs__() <==> abs(x)
 
             Returns
             -------
-            out : ndarray"""
+            out : ndarray
+        """
         pass
 
     def __add__(self, y): # real signature unknown; restored from __doc__
-        """ x.__add__(y) <==> x+y
+        """
+            x.__add__(y) <==> x+y
 
             Returns
             -------
-            out : ndarray"""
+            out : ndarray
+        """
         pass
 
     def __copy__(self, order=None): # real signature unknown; restored from __doc__
@@ -173,18 +181,22 @@ class ndarray(object):
 
 
     def __div__(self, y): # real signature unknown; restored from __doc__
-        """ x.__div__(y) <==> x/y
+        """
+            x.__div__(y) <==> x/y
 
             Returns
             -------
-            out : ndarray """
+            out : ndarray
+        """
         pass
 
 
     def __sub__(self, y): # real signature unknown; restored from __doc__
-        """ x.__sub__(y) <==> x-y
+        """
+            x.__sub__(y) <==> x-y
 
             Returns
             -------
-            out : ndarray"""
+            out : ndarray
+        """
         pass

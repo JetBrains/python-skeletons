@@ -2469,3 +2469,26 @@ class __generator(object):
         :rtype: None
         """
         pass
+
+class __function(object):
+    """A mock class representing function type."""
+
+    def __init__(self):
+        self.__name__ = ''
+        self.__doc__ = ''
+        self.__dict__ = ''
+        self.__module__ = ''
+
+        self.func_defaults = {}
+        self.func_globals = {}
+        self.func_closure = None
+        self.func_code = None
+        self.func_name = ''
+        self.func_doc = ''
+        self.func_dict = ''
+
+        if sys.version_info >= (2, 6):
+            self.__defaults__ = {}
+            self.__globals__ = {}
+            self.__closure__ = None
+            self.__code__ = None

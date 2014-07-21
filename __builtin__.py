@@ -105,7 +105,6 @@ def getattr(object, name, default=None):
     doesn't exist; without it, an exception is raised in that case.
 
     :type name: string
-    :rtype: object | unknown
     """
     pass
 
@@ -335,6 +334,15 @@ def vars(object=None):
     :rtype: dict[string, unknown]
     """
     return {}
+
+
+def zip(*iterables):
+    """This function returns a list of tuples, where the i-th tuple contains
+    the i-th element from each of the argument sequences or iterables.
+
+    :rtype: list[tuple]
+    """
+    return []
 
 
 class object:
@@ -2461,3 +2469,26 @@ class __generator(object):
         :rtype: None
         """
         pass
+
+class __function(object):
+    """A mock class representing function type."""
+
+    def __init__(self):
+        self.__name__ = ''
+        self.__doc__ = ''
+        self.__dict__ = ''
+        self.__module__ = ''
+
+        self.func_defaults = {}
+        self.func_globals = {}
+        self.func_closure = None
+        self.func_code = None
+        self.func_name = ''
+        self.func_doc = ''
+        self.func_dict = ''
+
+        if sys.version_info >= (2, 6):
+            self.__defaults__ = {}
+            self.__globals__ = {}
+            self.__closure__ = None
+            self.__code__ = None

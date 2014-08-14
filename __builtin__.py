@@ -2492,3 +2492,16 @@ class __function(object):
             self.__globals__ = {}
             self.__closure__ = None
             self.__code__ = None
+
+
+class __method(object):
+    """A mock class representing method type (both bound and unbound)."""
+
+    def __init__(self):
+        self.im_class = None
+        self.im_self = None
+        self.im_func = None
+
+        if sys.version_info >= (2, 6):
+            self.__func__ = None
+            self.__self__ = None

@@ -186,6 +186,8 @@ adopted at the moment:
 * Expression-based [typeannotations](https://github.com/ceronman/typeannotations)
   library for Python 3
 * [mypy](http://www.mypy-lang.org/) Python dialect
+* [pytypes](https://github.com/pytypes/pytypes): Optional typing for Python proposal
+* [Proposal: Use mypy syntax for function annotations](https://mail.python.org/pipermail/python-ideas/2014-August/028618.html) by GvR
 
 See also the notes on function annotations in
 [PEP-8](http://www.python.org/dev/peps/pep-0008/).

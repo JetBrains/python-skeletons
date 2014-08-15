@@ -107,9 +107,6 @@ skeletons using Sphinx docstrings using the following notation:
     Foo[T]             # Foo parameterized with T
     (Foo, Bar) -> Baz  # Function of Foo and Bar that returns Baz
 
-The formal syntax is defined in [pytypes](https://github.com/JetBrains/pytypes)
-library (work in progress).
-
 There are several shortcuts available:
 
     unknown            # Unknown type

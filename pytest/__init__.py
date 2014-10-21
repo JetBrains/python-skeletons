@@ -65,9 +65,11 @@ class collect:
 class mark:
 
     @staticmethod
-    def skipif(condition): 
+    def skipif(condition, reason=None):
         """skip the given test function if eval(condition) results in a True
         value.
+
+        Optionally specify a reason for better reporting.
         
         Evaluation happens within the module global context. 
         Example: ``skipif('sys.platform == "win32"')`` skips the test if

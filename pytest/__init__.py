@@ -136,7 +136,7 @@ def raises(ExpectedException, *args, **kwargs):
     """ assert that a code block/function call raises @ExpectedException and
     raise a failure exception otherwise.
 
-    :type ExpectedException: Exception
+    :type ExpectedException: T
 
     This helper produces a ``py.code.ExceptionInfo()`` object.
 

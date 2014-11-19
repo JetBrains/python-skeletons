@@ -130,8 +130,39 @@ def WAVE_FORMAT_PCM(*args, **kwargs):
 
 
 class error(Exception):
-    pass
+    def __init__(self, *args):
+        nargs = len(args)
+        if nargs > 0:
+            self.winerror = args[0]
+        else:
+            self.winerror = None
+        if nargs > 1:
+            self.funcname = args[1]
+        else:
+            self.funcname = None
+        if nargs > 2:
+            self.strerror = args[2]
+        else:
+            self.strerror = None
+        Exception.__init__(self, *args)
 
 
 class com_error(Exception):
-    pass
+    def __init__(self, *args):
+        nargs = len(args)
+        if nargs > 0:
+            self.hresult = args[0]
+        else:
+            self.hresult = None
+        if nargs > 1:
+            self.strerror = args[1]
+        else:
+            self.strerror = None
+        if nargs > 2:
+            self.excepinfo = args[2]
+        else:
+            self.excepinfo = None
+        if nargs > 3:
+            self.argerror = args[3]
+        else: self.argerror = None
+        Exception.__init__(self, *args)

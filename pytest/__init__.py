@@ -1,6 +1,6 @@
 """Skeleton for 'pytest'.
 
-Project: pytest 2.6.2 <http://pytest.org/latest/>
+Project: pytest 2.6.4 <http://pytest.org/latest/>
 Skeleton by: Bruno Oliveira <nicoddemus@gmail.com>
 
 Exposing everything that can be extracted from `pytest_namespace` hook
@@ -123,6 +123,13 @@ class mark:
     def trylast(f):
         """mark a hook implementation function such that the plugin machinery
         will try to call it last/as late as possible.
+        """
+
+    @staticmethod
+    def hookwrapper(f):
+        """A hook wrapper is a generator function which yields exactly once. 
+        When pytest invokes hooks it first executes hook wrappers and passes 
+        the same arguments as to the regular hooks.
         """
 
 

@@ -99,10 +99,11 @@ class IOBase(object):
 
     def seek(self, offset, whence=io.SEEK_SET):
         """Change the stream position to the given byte offset.
+        Return the new absolute position.
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
-        :rtype: None
+        :rtype: int
         """
         pass
 
@@ -304,10 +305,11 @@ class FileIO(io.RawIOBase):
 
     def seek(self, offset, whence=io.SEEK_SET):
         """Change the stream position to the given byte offset.
+        Return the new absolute position.
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
-        :rtype: None
+        :rtype: int
         """
         pass
 
@@ -549,10 +551,11 @@ class TextIOWrapper(io.TextIOBase):
 
     def seek(self, offset, whence=io.SEEK_SET):
         """Change the stream position to the given byte offset.
+        Return the new absolute position.
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
-        :rtype: None
+        :rtype: int
         """
         pass
 

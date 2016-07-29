@@ -287,3 +287,19 @@ def importorskip(modname, minversion=None):
 def xfail(reason=""):
     """ xfail an executing test or setup functions with the given reason.
     """
+
+
+def approx(expected, rel=None, abs=None):
+    """
+    Assert that two numbers (or two sets of numbers) are equal to each other
+    within some tolerance.
+
+    The ``approx`` class performs floating-point comparisons using a syntax
+    that's as intuitive as possible::
+
+        >>> from pytest import approx
+        >>> 0.1 + 0.2 == approx(0.3)
+        True
+
+    http://doc.pytest.org/en/latest/builtin.html#comparing-floating-point-numbers
+    """

@@ -1,6 +1,6 @@
 """Skeleton for 'pytest'.
 
-Project: pytest 2.6.4 <http://pytest.org/latest/>
+Project: pytest 3.0.0 <http://doc.pytest.org>
 Skeleton by: Bruno Oliveira <nicoddemus@gmail.com>
 
 Exposing everything that can be extracted from `pytest_namespace` hook
@@ -81,14 +81,14 @@ class mark:
         Example: ``skipif('sys.platform == "win32"')`` skips the test if
         we are on the win32 platform.
         
-        see http://pytest.org/latest/skipping.html
+        see http://doc.pytest.org/en/latest/skipping.html
         """
 
     @staticmethod
     def skip(reason=None):
         """skip the given test function, optionally specify a reason for better reporting.
 
-        see http://pytest.org/latest/skipping.html
+        see http://doc.pytest.org/en/latest/skipping.html
         """
 
     @staticmethod
@@ -99,7 +99,7 @@ class mark:
         Optionally specify a reason for better reporting and run=False if
         you don't even want to execute the test function.
         
-        See http://pytest.org/latest/skipping.html
+        See http://doc.pytest.org/en/latest/skipping.html
         """
 
     @staticmethod
@@ -115,7 +115,7 @@ class mark:
         Example: @parametrize('arg1', [1,2]) would lead to two calls of the
         decorated test function, one with arg1=1 and another with arg1=2.
 
-        see http://pytest.org/latest/parametrize.html for more info
+        see http://doc.pytest.org/en/latest/parametrize.html for more info
         and examples.
         """
 
@@ -123,7 +123,7 @@ class mark:
     def usefixtures(*fixturenames): 
         """mark tests as needing all of the specified fixtures. 
         
-        see http://pytest.org/latest/fixture.html#usefixtures
+        see http://doc.pytest.org/en/latest/fixture.html#usefixtures
         """
 
     @staticmethod
@@ -239,7 +239,7 @@ def yield_fixture(scope="function", params=None, autouse=False, ids=None):
     This takes the same arguments as :py:func:`pytest.fixture` but
     expects a fixture function to use a ``yield`` instead of a ``return``
     statement to provide a fixture.  See
-    http://pytest.org/en/latest/yieldfixture.html for more info.
+    http://doc.pytest.org/en/latest/yieldfixture.html for more info.
     """
 
 

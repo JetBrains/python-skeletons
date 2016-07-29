@@ -85,6 +85,13 @@ class mark:
         """
 
     @staticmethod
+    def skip(reason=None):
+        """skip the given test function, optionally specify a reason for better reporting.
+
+        see http://pytest.org/latest/skipping.html
+        """
+
+    @staticmethod
     def xfail(condition=None, reason=None, raises=None, run=True, strict=False):
         """mark the the test function as an expected failure if eval(condition)
         has a True value.

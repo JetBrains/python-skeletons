@@ -203,7 +203,8 @@ def raises(ExpectedException, *args, **kwargs):
 
     """
 
-def fixture(scope="function", params=None, autouse=False, ids=None):
+
+def fixture(scope="function", params=None, autouse=False, ids=None, name=None):
     """ (return a) decorator to mark a fixture factory function.
 
     This decorator can be used (with or or without parameters) to define
@@ -215,7 +216,7 @@ def fixture(scope="function", params=None, autouse=False, ids=None):
     function will be injected.
 
     :arg scope: the scope for which this fixture is shared, one of
-                "function" (default), "class", "module", "session".
+                "function" (default), "class", "module", "session" or "invocation".
 
     :arg params: an optional list of parameters which will cause multiple
                 invocations of the fixture function and all of the tests
@@ -229,18 +230,24 @@ def fixture(scope="function", params=None, autouse=False, ids=None):
        so that they are part of the test id. If no ids are provided
        they will be generated automatically from the params.
 
+    :arg name: the name of the fixture. This defaults to the name of the
+               decorated function. If a fixture is used in the same module in
+               which it is defined, the function name of the fixture will be
+               shadowed by the function arg that requests the fixture; one way
+               to resolve this is to name the decorated function
+               ``fixture_<fixturename>`` and then use
+               ``@pytest.fixture(name='<fixturename>')``.
     """
 
 
-def yield_fixture(scope="function", params=None, autouse=False, ids=None):
-    """ (return a) decorator to mark a yield-fixture factory function
-    (EXPERIMENTAL).
+def yield_fixture(scope="function", params=None, autouse=False, ids=None, name=None):
+    """ (return a) decorator to mark a yield-fixture factory function.
 
-    This takes the same arguments as :py:func:`pytest.fixture` but
-    expects a fixture function to use a ``yield`` instead of a ``return``
-    statement to provide a fixture.  See
-    http://doc.pytest.org/en/latest/yieldfixture.html for more info.
+    .. deprecated:: 3.0
+        Use :py:func:`pytest.fixture` directly instead.
     """
+    import warnings
+    warnings.warn(DeprecationWarning('Use @pytest.fixture directly instead.'))
 
 
 # _pytest.recwarn

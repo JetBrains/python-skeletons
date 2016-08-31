@@ -8,7 +8,6 @@ in standard pytest modules, using original docstrings.
 """
 
 
-# _pytest.genscript
 def freeze_includes():
     """
     Returns a list of module names used by py.test that should be
@@ -333,3 +332,16 @@ def approx(expected, rel=None, abs=None):
 
     http://doc.pytest.org/en/latest/builtin.html#comparing-floating-point-numbers
     """
+
+
+def register_assert_rewrite(*names):
+    """Register a module name to be rewritten on import.
+
+    This function will make sure that this module or all modules inside
+    the package will get their assert statements rewritten.
+    Thus you should make sure to call this before the module is
+    actually imported, usually in your __init__.py if you are a plugin
+    using a package.
+
+    :raise TypeError: if the given module names are not strings.
+    """    

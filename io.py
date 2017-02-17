@@ -298,7 +298,7 @@ class FileIO(io.RawIOBase):
         """Read and return a list of lines from the stream.
 
         :type hint: numbers.Integral
-        :rtype: list[bytes]
+        :rtype: list[str]
         """
         return []
 

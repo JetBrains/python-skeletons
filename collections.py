@@ -41,9 +41,10 @@ class Iterator(collections.Iterable):
 
 
 class defaultdict(dict):
-    def __init__(self, default_factory=None, **kwargs):
+    def __init__(self, default_factory=None, iterable=None, **kwargs):
         """
         :type default_factory: () -> V
+        :type iterable: collections.Iterable[(T, V)]
         :rtype: defaultdict[Any, V]
         """
         pass

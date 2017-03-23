@@ -1,5 +1,5 @@
-''The python-skeletons repository is *deprecated*. Use PEP 484 and Typeshed
-insetead.''
+_The python-skeletons repository is *deprecated*. Use PEP 484 and Typeshed
+insetead._
 
 
 

@@ -526,11 +526,12 @@ def isatty(fd):
 def lseek(fd, pos, how):
     """Set the current position of file descriptor fd to position pos, modified
     by how.
+    Return the new absolute position.
 
     :type fd: int
     :type pos: numbers.Integral
     :type how: int
-    :rtype: None
+    :rtype: int
     """
     pass
 

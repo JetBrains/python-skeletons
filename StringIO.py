@@ -86,11 +86,12 @@ class StringIO(object):
         pass
 
     def seek(self, offset, whence=0):
-        """Set the buffer's current position, like stdio's fseek().
+        """Set the buffer's current position, like stdio's fseek() except
+        that return the new absolute position.
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
-        :rtype: None
+        :rtype: int
         """
         pass
 

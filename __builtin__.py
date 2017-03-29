@@ -2833,11 +2833,12 @@ class file(object):
         return []
 
     def seek(self, offset, whence=0):
-        """Set the file's current position, like stdio's fseek().
+        """Set the file's current position, like stdio's fseek() except
+        that return the new absolute position.
 
         :type offset: numbers.Integral
         :type whence: numbers.Integral
-        :rtype: None
+        :rtype: int
         """
         pass
 

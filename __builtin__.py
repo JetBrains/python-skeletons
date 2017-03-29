@@ -1295,9 +1295,9 @@ class str(basestring):
     def __mod__(self, y):
         """x % y.
 
-        :rtype: string
+        :rtype: str
         """
-        return b''
+        return ''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.
@@ -1687,7 +1687,7 @@ class unicode(basestring):
 
         :rtype: unicode
         """
-        return ''
+        return u''
 
     def __rmul__(self, n):
         """n shallow copies of x concatenated.

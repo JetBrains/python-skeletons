@@ -496,7 +496,7 @@ class SvnWCCommandPath(PathBase):
 
     def blame(self):
         """ return a list of tuples of three elements:
-            (revision, commiter, line)
+            (revision, committer, line)
         """
 
     def commit(self, msg='', rec=1):
